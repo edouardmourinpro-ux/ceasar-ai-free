@@ -1,92 +1,52 @@
-# CEASAR.AI — Cours Claude Code Gratuit
+# Cours Claude Code Gratuit — Ceasar.ai
 
-> Le premier cours Claude Code interactif en français — installé directement dans ton terminal.
+Cours interactif gratuit qui tourne directement dans Claude Code. Passe de zéro à un système IA personnalisé pour ton business en moins d'une heure.
 
-**Pas de plateforme. Pas de connexion. Claude te guide dans ton propre terminal.**
+Créé par [@ceasar.ai](https://instagram.com/ceasar.ai)
 
 ---
 
 ## Étape 1 — Installe Claude Code
 
-Claude Code est l'outil qui fait tourner ce cours. Tu dois l'installer avant de continuer.
+Ouvre ton terminal et colle la commande selon ton système :
 
-### Dans ton terminal (Mac / Linux)
-
-**Vérifie que Node.js est installé :**
-
-```bash
-node -v
+**macOS / Linux :**
+```
+curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-Si tu vois un numéro de version, c'est bon. Sinon, télécharge et installe Node.js sur [nodejs.org](https://nodejs.org).
-
-**Installe Claude Code :**
-
-```bash
-npm install -g @anthropic-ai/claude-code
+**Windows (PowerShell) :**
+```
+irm https://claude.ai/install.ps1 | iex
 ```
 
-**Lance Claude Code :**
+**Dans Cursor :** ouvre le terminal intégré (`Terminal` → `Nouveau terminal`) et utilise la commande macOS/Linux ci-dessus.
 
-```bash
-claude
-```
-
-La première fois, Claude te demandera de te connecter à ton compte Anthropic. Suis les instructions à l'écran — c'est rapide.
-
----
-
-### Dans Cursor
-
-Si tu utilises Cursor comme éditeur, Claude Code tourne dans le terminal intégré.
-
-**Étape 1 — Ouvre le terminal dans Cursor**
-
-`Terminal` → `Nouveau terminal` (raccourci : `Ctrl+`` ` ` sur Mac)
-
-**Étape 2 — Installe Claude Code**
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-**Étape 3 — Lance Claude Code**
-
-```bash
-claude
-```
-
-Claude Code fonctionne exactement pareil dans Cursor. Tu tapes des commandes, Claude répond et agit sur tes fichiers.
+*Sur Mac : cherche "Terminal" dans Spotlight. Sur Windows : ouvre PowerShell.*
 
 ---
 
 ## Étape 2 — Installe le cours
 
-Une fois Claude Code installé, télécharge et installe le cours en une commande :
-
-```bash
-git clone https://github.com/edouardmourinpro-ux/ceasar-ai-free && bash ceasar-ai-free/install.sh
+**macOS / Linux / Cursor :**
+```
+curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/install.sh | bash
 ```
 
-Cette commande télécharge les fichiers du cours et les place automatiquement au bon endroit.
-
-Tu verras ce message quand c'est bon :
-
+**Windows (PowerShell) :**
 ```
-  Cours installé avec succès !
-
-  Dans Claude Code, tape :
-
-    /ceasar:start
+irm https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/install.ps1 | iex
 ```
+
+Ça télécharge les 7 leçons, les skills et les bonus directement sur ta machine.
 
 ---
 
 ## Étape 3 — Démarre le cours
 
-Lance Claude Code si ce n'est pas déjà fait :
+Ouvre Claude Code :
 
-```bash
+```
 claude
 ```
 
@@ -96,60 +56,51 @@ Puis tape :
 /ceasar:start
 ```
 
-Claude affiche le menu du cours et te guide pour démarrer la Leçon 1.
+**C'est tout. Claude prend le relais.**
 
 ---
 
-## Les 7 leçons du parcours
+## Les 7 leçons
 
-| # | Leçon | Ce que tu repars avec |
-|---|---|---|
-| 1 | **Setup** | Ton CLAUDE.md personnalisé + première skill custom |
-| 2 | **Automatise** | Ta première vraie automatisation en production |
-| 3 | **Crée** | Ton premier hook et script prêt à publier |
-| 4 | **Connecte** | 3 MCPs installés et fonctionnels (Notion, Gmail...) |
-| 5 | **Agents** | Un workflow multi-agents lancé sur ta vraie tâche |
-| 6 | **Construis** | Un projet réel et fonctionnel dans Claude Code |
+| # | Leçon | Ce que tu vas faire |
+|---|-------|---------------------|
+| 1 | **Setup** | Claude apprend TON business — nom, audience, voix, outils |
+| 2 | **Automatise** | Crée ta première automatisation concrète et utile |
+| 3 | **Crée** | Génère du contenu viral adapté à ton profil |
+| 4 | **Connecte** | Connecte tes outils via les MCPs (Notion, Gmail...) |
+| 5 | **Agents** | Lance plusieurs Claudes en parallèle sur tes vraies tâches |
+| 6 | **Construis** | Claude construit un vrai projet pour ton business |
 | 7 | **Système** | Le système complet → accès à la communauté |
 
-Chaque leçon est **interactive** — Claude s'adapte à ton profil et à ton business. Un créateur de contenu n'a pas le même parcours qu'un e-commerçant.
+---
+
+## Cadeaux débloqués pendant le cours
+
+| Leçon | Cadeau |
+|-------|--------|
+| 1 | **10 prompts qui changent tout** — prompts business à copier-coller |
+| 2 | **Skill Builder** — une skill qui crée d'autres skills |
+| 3 | **Hook Generator** — 10 hooks viraux pour tes vidéos et posts |
+| 4 | **MCP Builder** — connecte Claude à n'importe quel outil |
+| 5 | **5 workflows multi-agents** — recettes prêtes à l'emploi |
+| 6 | **Business Builder** — mega-prompts qui construisent des systèmes complets |
+| 7 | **Cheat Sheet** — tout le cours en une page |
 
 ---
 
-## Skills bonus incluses
+## Skills gratuites incluses
 
-Une fois le cours installé, tu as aussi accès à :
+Commandes disponibles dès l'installation :
 
-- **`/ceasar:hook-gen`** — Génère 10 hooks viraux pour ta prochaine vidéo ou Reel
-- **`/ceasar:script-fr`** — Écrit un script complet YouTube ou Reel dans ta voix
-
----
-
-## Pourquoi ce cours est différent
-
-**Cours classiques :** tu regardes, tu oublies.
-
-**Ce cours :** tu tapes une commande, Claude te pose des questions, tu repars avec quelque chose de concret à la fin de chaque leçon.
-
-- 100% interactif — Claude s'adapte à ton profil
-- En français — pensé pour les entrepreneurs et créateurs FR
-- Résultats concrets à chaque leçon — pas juste de la théorie
-- Gratuit — la leçon 7 te montre comment aller plus loin
+| Commande | Ce que ça fait |
+|----------|----------------|
+| `/ceasar:hook-gen` | Génère 10 hooks viraux pour ta prochaine vidéo ou Reel |
+| `/ceasar:script-fr` | Écrit un script complet YouTube ou Reel dans ta voix |
 
 ---
 
-## Pour aller plus loin
+## Rester connecté
 
-**La communauté Ceasar.ai :**
-→ [Rejoindre le Skool](https://www.skool.com/ceasar-ai/about)
-
-**Instagram :**
-→ [@ceasar.ai](https://www.instagram.com/ceasar.ai)
-
----
-
-## Auteur
-
-Construit par **Edouard** — Ceasar.ai
-
-> "J'apprends Claude Code en public. Tout ce que je construis, je le montre. Ce cours, c'est exactement ce que j'aurais voulu avoir quand j'ai commencé."
+- **Communauté :** [Ceasar.ai Premium](https://www.skool.com/ceasar-ai/about) — cours avancés, live, communauté
+- **Instagram :** [@ceasar.ai](https://instagram.com/ceasar.ai) — tutoriels IA au quotidien
+- **GitHub :** [edouardmourinpro-ux](https://github.com/edouardmourinpro-ux) — outils open source

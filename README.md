@@ -2,7 +2,7 @@
 
 Cours interactif gratuit qui tourne directement dans Claude Code. Passe de zéro à un système IA personnalisé pour ton business en moins d'une heure.
 
-Créé par [@ceasar.ai](https://instagram.com/ceasar.ai)
+Créé par [@ceasar.ia](https://instagram.com/ceasar.ia)
 
 ---
 
@@ -102,5 +102,5 @@ Commandes disponibles dès l'installation :
 ## Rester connecté
 
 - **Communauté :** [Ceasar.ai Premium](https://www.skool.com/ceasar-ai/about) — cours avancés, live, communauté
-- **Instagram :** [@ceasar.ai](https://instagram.com/ceasar.ai) — tutoriels IA au quotidien
+- **Instagram :** [@ceasar.ia](https://instagram.com/ceasar.ia) — tutoriels IA au quotidien
 - **GitHub :** [edouardmourinpro-ux](https://github.com/edouardmourinpro-ux) — outils open source

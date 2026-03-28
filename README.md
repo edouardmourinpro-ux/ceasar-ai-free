@@ -65,7 +65,7 @@ Claude Code fonctionne exactement pareil dans Cursor. Tu tapes des commandes, Cl
 Une fois Claude Code installé, télécharge et installe le cours en une commande :
 
 ```bash
-git clone https://github.com/ceasar-ai/ceasar-ai-free && bash ceasar-ai-free/install.sh
+git clone https://github.com/edouardmourinpro-ux/ceasar-ai-free && bash ceasar-ai-free/install.sh
 ```
 
 Cette commande télécharge les fichiers du cours et les place automatiquement au bon endroit.

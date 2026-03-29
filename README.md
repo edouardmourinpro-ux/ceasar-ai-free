@@ -40,7 +40,7 @@ curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/
 irm https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/install.ps1 | iex
 ```
 
-Ça télécharge les 7 leçons, les skills et les bonus directement sur ta machine.
+Ça télécharge les 6 leçons, les skills et les bonus directement sur ta machine.
 
 ---
 
@@ -62,31 +62,16 @@ Puis tape :
 
 ---
 
-## Les 7 leçons
+## Les 6 leçons
 
 | # | Leçon | Ce que tu vas faire |
 |---|-------|---------------------|
-| 1 | **Setup** | Claude apprend TON business — nom, audience, voix, outils |
-| 2 | **Automatise** | Crée ta première automatisation concrète et utile |
-| 3 | **Crée** | Génère du contenu viral adapté à ton profil |
-| 4 | **Connecte** | Connecte tes outils via les MCPs (Notion, Gmail...) |
-| 5 | **Agents** | Lance plusieurs Claudes en parallèle sur tes vraies tâches |
-| 6 | **Construis** | Claude construit un vrai projet pour ton business |
-| 7 | **Système** | Le système complet → accès à la communauté |
-
----
-
-## Cadeaux débloqués pendant le cours
-
-| Leçon | Cadeau |
-|-------|--------|
-| 1 | **10 prompts qui changent tout** — prompts business à copier-coller |
-| 2 | **Skill Builder** — une skill qui crée d'autres skills |
-| 3 | **Hook Generator** — 10 hooks viraux pour tes vidéos et posts |
-| 4 | **MCP Builder** — connecte Claude à n'importe quel outil |
-| 5 | **5 workflows multi-agents** — recettes prêtes à l'emploi |
-| 6 | **Business Builder** — mega-prompts qui construisent des systèmes complets |
-| 7 | **Cheat Sheet** — tout le cours en une page |
+| 1 | **CLAUDE.md** | Claude apprend TON business — nom, audience, voix, outils |
+| 2 | **Ta première skill** | Crée une commande qui fait le travail à ta place |
+| 3 | **Connecte tes outils (MCP)** | Claude parle à tes vraies apps — Notion, Gmail, et plus |
+| 4 | **Ton équipe d'agents IA** | Lance plusieurs Claudes en parallèle sur tes vraies tâches |
+| 5 | **Build ton premier vrai projet** | Tu décris, Claude construit — un vrai projet pour ton business |
+| 6 | **Le système complet** | Tout s'assemble → accès à la communauté Skool |
 
 ---
 
@@ -98,6 +83,9 @@ Commandes disponibles dès l'installation :
 |----------|----------------|
 | `/ceasar:synthese` | Résume n'importe quel contenu — URL, article, texte collé |
 | `/ceasar:email-pro` | Rédige n'importe quel email pro dans ta voix en 1 minute |
+| `/ceasar:hook-gen` | Génère 10 hooks viraux pour tes vidéos et posts |
+| `/ceasar:script-fr` | Écrit un script YouTube ou Reel complet dans ta voix |
+| `/ceasar:repro` | Reproduit une vidéo virale — analyse, adapte, script prêt à filmer |
 
 ---
 

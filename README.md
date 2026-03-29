@@ -28,6 +28,8 @@ irm https://claude.ai/install.ps1 | iex
 
 ## Étape 2 — Installe le cours
 
+> **Important :** lance cette commande dans ton terminal normal — pas dans Claude Code.
+
 **macOS / Linux / Cursor :**
 ```
 curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/install.sh | bash

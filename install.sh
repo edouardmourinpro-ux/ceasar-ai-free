@@ -21,6 +21,8 @@ FILES=(
   "lesson-5.md"
   "lesson-6.md"
   "lesson-7.md"
+  "synthese.md"
+  "email-pro.md"
   "hook-gen.md"
   "script-fr.md"
 )

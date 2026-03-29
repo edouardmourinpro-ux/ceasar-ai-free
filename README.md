@@ -96,8 +96,8 @@ Commandes disponibles dès l'installation :
 
 | Commande | Ce que ça fait |
 |----------|----------------|
-| `/ceasar:hook-gen` | Génère 10 hooks viraux pour ta prochaine vidéo ou Reel |
-| `/ceasar:script-fr` | Écrit un script complet YouTube ou Reel dans ta voix |
+| `/ceasar:synthese` | Résume n'importe quel contenu — URL, article, texte collé |
+| `/ceasar:email-pro` | Rédige n'importe quel email pro dans ta voix en 1 minute |
 
 ---
 

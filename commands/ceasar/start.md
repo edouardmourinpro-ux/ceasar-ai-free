@@ -78,8 +78,11 @@ Puis affiche :
 ║                                                           ║
 ║   SKILLS GRATUITES INCLUSES                               ║
 ║                                                           ║
-║   /ceasar:hook-gen   -- 10 hooks viraux en 30 secondes    ║
-║   /ceasar:script-fr  -- Script YouTube/Reel complet       ║
+║   /ceasar:synthese   -- Résume n'importe quel contenu     ║
+║                         URL, article, texte, sujet        ║
+║                                                           ║
+║   /ceasar:email-pro  -- Rédige un email pro en 1 min      ║
+║                         Prospection, relance, client...   ║
 ║                                                           ║
 ║   Disponibles tout de suite. Pas besoin d'attendre.       ║
 ║                                                           ║

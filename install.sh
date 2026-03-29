@@ -4,21 +4,36 @@
 # ============================================
 
 echo ""
-echo "  ⚡ CEASAR.AI — Installation en cours..."
+echo "  CEASAR.AI — Installation en cours..."
 echo ""
 
 DEST="$HOME/.claude/commands/ceasar"
 mkdir -p "$DEST"
 
-REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_URL="https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar"
 
-cp "$REPO_DIR/commands/ceasar/"*.md "$DEST/"
+FILES=(
+  "start.md"
+  "lesson-1.md"
+  "lesson-2.md"
+  "lesson-3.md"
+  "lesson-4.md"
+  "lesson-5.md"
+  "lesson-6.md"
+  "lesson-7.md"
+  "hook-gen.md"
+  "script-fr.md"
+)
 
-echo "  ✅ Cours installé avec succès !"
+for file in "${FILES[@]}"; do
+  curl -fsSL "$BASE_URL/$file" -o "$DEST/$file"
+done
+
+echo "  Cours installe avec succes !"
 echo ""
 echo "  Dans Claude Code, tape :"
 echo ""
 echo "    /ceasar:start"
 echo ""
-echo "  Bonne formation 🚀"
+echo "  Bonne formation !"
 echo ""

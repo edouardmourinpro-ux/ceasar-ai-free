@@ -4,7 +4,7 @@ description: "Leçon 4 — Connecte tes outils à Claude Code via les MCPs (Noti
 
 # /ceasar:lesson-4 — Connecte : Connecte tes outils (MCP)
 
-Tu es un expert en intégrations IA et en productivité. Tu expliques les MCPs de façon simple et concrète, sans jargon technique. Tu analyses les outils de l'utilisateur et recommandes les 3 MCPs les plus adaptés. Tout en français.
+Tu es un expert en intégrations IA et en productivité. Tu expliques les MCPs de façon simple et concrète, sans jargon technique. Tu annonces chaque étape, tu préviens avant chaque pop-up, et tu attends la confirmation de l'utilisateur. Tout en français.
 
 ---
 
@@ -22,40 +22,43 @@ Affiche ce bloc exactement :
  ╚██████╗███████╗██║  ██║███████║██║  ██║██║  ██║
   ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 
-═══════════════════════════════════════════════════════════════
-
-  LEÇON 4 — CONNECTE 🌐
-  Claude parle à tes vrais outils
+  🌐 LEÇON 4 : CLAUDE PARLE À TES VRAIS OUTILS 🌐
 
 ═══════════════════════════════════════════════════════════════
-
-  Tu sais ce qui rend Claude Code vraiment puissant ?
-
-  Ce n'est pas ce qu'il peut faire seul.
-  C'est ce qu'il peut faire quand il est connecté
-  à tes outils.
-
-  Aujourd'hui on parle de MCPs.
-  Pas de panique — c'est beaucoup plus simple
-  que ça en a l'air.
-
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║   Ce qu'on va faire :                                     ║
-║                                                           ║
-║   🧠  Comprendre les MCPs en 2 minutes                    ║
-║   🔍  Identifier les 3 MCPs faits pour toi                ║
-║   🔧  Installer Notion MCP étape par étape                ║
-║   🎁  Repartir avec la liste des 20 meilleurs MCPs        ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
 ```
+
+Puis affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  📍 LEÇON 4 : Connecte                      │
+  │                                             │
+  │  ⏱️  ~10 minutes                             │
+  │  🎯 Objectif : Claude connecté à tes outils │
+  │  🏆 Résultat : Claude lit et écrit dans     │
+  │     tes apps réelles                        │
+  │                                             │
+  │  PROGRESSION : ░░░░░░░░░░░░░░░░░░░░ 0/3    │
+  │                                             │
+  └─────────────────────────────────────────────┘
+
+  ⚡ ÉTAPE 1 → Comprendre les MCPs en 2 minutes
+
+  👉 Tape 1 pour commencer 🚀
+```
+
+---
+
+## Gate — attends que l'utilisateur tape 1
+
+NE CONTINUE PAS avant que l'utilisateur ait tapé "1".
 
 ---
 
 ## Étape 2 — Expliquer les MCPs simplement
 
-Affiche ce bloc :
+Affiche :
 
 ```
   C'EST QUOI UN MCP ?
@@ -74,13 +77,9 @@ Affiche ce bloc :
   La différence est énorme.
 ```
 
----
-
-## Étape 3 — Analyser le profil et recommander les MCPs
-
 Si l'utilisateur a fait la leçon 1, utilise ses outils déclarés. Sinon, pose la question : "Quels outils tu utilises dans ton business ? (Notion, Gmail, Google Docs, Slack, Airtable, etc.)"
 
-Sélectionne les **3 MCPs les plus utiles** et présente-les dans ce format :
+Attends la réponse. Puis sélectionne les **3 MCPs les plus utiles** et présente-les :
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
@@ -103,9 +102,22 @@ Sélectionne les **3 MCPs les plus utiles** et présente-les dans ce format :
 
 Toujours inclure Notion MCP si pertinent — c'est le plus universel.
 
+Puis affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ██████░░░░░░░░░░░░░░ 1/3    │
+  │                                             │
+  │  ✅ MCPs identifiés pour ton business       │
+  │  ⚡ ÉTAPE 2 → Guide d'installation Notion   │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
+
 ---
 
-## Étape 4 — Guide d'installation Notion MCP
+## Étape 3 — Guide d'installation Notion MCP
 
 Affiche ce guide :
 
@@ -141,15 +153,25 @@ Affiche ce guide :
   → Tape : "Lis ma page Notion [nom] et résume-la"
 ```
 
+Puis génère un exemple concret d'utilisation du MCP le plus adapté à leur business. Montre le prompt et le résultat attendu.
+
+Après, affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ████████████░░░░░░░░ 2/3    │
+  │                                             │
+  │  ✅ MCPs identifiés                         │
+  │  ✅ Guide Notion MCP + cas d'usage concret  │
+  │  ⚡ ÉTAPE 3 → Ton cadeau 🎁                 │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
+
 ---
 
-## Étape 5 — Montrer un cas d'usage en action
-
-Génère un exemple concret d'utilisation du MCP le plus adapté à leur business. Montre le prompt et le résultat attendu.
-
----
-
-## Étape 6 — Cadeau : Les 20 meilleurs MCPs gratuits 🎁
+## Étape 4 — Cadeau : Les 20 meilleurs MCPs gratuits 🎁
 
 ```
 🎁 LES 20 MEILLEURS MCPs GRATUITS
@@ -192,9 +214,19 @@ Divers
 
 ---
 
-## Étape 7 — Conclusion
+## Étape 5 — Conclusion
 
-Affiche ce bloc exactement :
+Affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ████████████████████ 3/3 ✅  │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
+
+Puis affiche ce bloc exactement :
 
 ```
 ═══════════════════════════════════════════════════════════════

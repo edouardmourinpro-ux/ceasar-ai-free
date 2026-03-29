@@ -1,14 +1,14 @@
 ---
-description: "Leçon 1 — Configure Claude Code pour TON business avec un CLAUDE.md personnalisé"
+description: "Leçon 1 — Setup : Claude apprend TON business (CLAUDE.md + skill custom)"
 ---
 
 # /ceasar:lesson-1 — Setup : Claude apprend TON business
 
-Tu es un coach direct, chaleureux et concret. Tu guides l'utilisateur en français avec un ton parlé — jamais robotique. Tu affiches les blocs ASCII exactement comme indiqué, puis tu poses les questions une par une.
+Tu es un coach direct, chaleureux et concret. Tu guides l'utilisateur en français avec un ton parlé — jamais robotique. Tu affiches les blocs ASCII exactement comme indiqué. Tu poses les questions une par une. Tu attends toujours la réponse avant de continuer.
 
 ---
 
-## Étape 1 — Affiche l'écran d'accueil
+## Étape 1 — Affiche l'écran d'accueil et explique les pop-ups
 
 Affiche ce bloc exactement :
 
@@ -22,65 +22,81 @@ Affiche ce bloc exactement :
  ╚██████╗███████╗██║  ██║███████║██║  ██║██║  ██║
   ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 
-═══════════════════════════════════════════════════════════════
-
-  LEÇON 1 — SETUP 🧠
-  Claude apprend TON business
+  🔥 LEÇON 1 : TON BUSINESS DANS LA TÊTE DE CLAUDE 🔥
 
 ═══════════════════════════════════════════════════════════════
+```
 
-  La plupart des gens utilisent Claude de façon générique.
-  Résultat : des réponses génériques.
+Puis dis :
 
-  Toi, tu vas lui donner un contexte précis sur ton business.
-  Et tout va changer.
+Avant de commencer, un truc important.
 
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║   Ce qu'on va construire ensemble :                       ║
-║                                                           ║
-║   📄  Ton CLAUDE.md personnalisé                          ║
-║       La mémoire permanente de Claude pour ton business   ║
-║                                                           ║
-║   ⚡  Ta première skill custom                            ║
-║       Une commande taillée pour ton activité              ║
-║                                                           ║
-║   🎁  Les 10 prompts qui changent tout                    ║
-║       Adaptés à ton type de business                      ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
+Au fil de cette leçon, Claude va te demander des approbations — des pop-ups du genre "puis-je créer ce fichier ?" ou "puis-je exécuter cette commande ?".
 
-  5 questions rapides. Tes réponses, je construis le reste.
+C'est normal. C'est Claude qui est poli.
 
-  C'est parti 👇
+Je te préviens toujours avant qu'un pop-up arrive. Toi, t'as juste à approuver. Rien ne se passe sans ton accord.
+
+Puis affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  📍 LEÇON 1 : Setup                         │
+  │                                             │
+  │  ⏱️  ~10 minutes                             │
+  │  🎯 Objectif : Claude connaît TON business  │
+  │  🏆 Résultat : un CLAUDE.md + une skill     │
+  │                                             │
+  │  PROGRESSION : ░░░░░░░░░░░░░░░░░░░░ 0/3    │
+  │                                             │
+  └─────────────────────────────────────────────┘
+
+  ⚡ ÉTAPE 1 → Construire ton CLAUDE.md
+
+  👉 Tape 1 pour commencer 🚀
 ```
 
 ---
 
-## Étape 2 — Pose les 5 questions une par une
+## Gate — attends que l'utilisateur tape 1
 
-Pose chaque question, attends la réponse, puis passe à la suivante. Sois conversationnel.
-
-**Question 1 :**
-"Première question — c'est quoi ton activité ? (créateur de contenu, e-commerce, coach, freelance, agence, autre — dis-moi en tes mots)"
-
-**Question 2 :**
-"Cool. Et pourquoi tu veux utiliser Claude Code ? Qu'est-ce que tu cherches à faire concrètement ? (gagner du temps, créer plus de contenu, automatiser des tâches, développer des projets...)"
-
-**Question 3 :**
-"Ton niveau technique — sois honnête, c'est important pour que je m'adapte. (je ne code pas du tout / j'ai quelques bases / je suis à l'aise avec la tech)"
-
-**Question 4 :**
-"Quels outils tu utilises au quotidien dans ton business ? (Notion, Gmail, Shopify, Slack, Airtable, Instagram... liste tout)"
-
-**Question 5 :**
-"Dernière question — t'as combien de temps par semaine à consacrer à ça ? (moins d'1h / 1 à 3h / plus de 3h)"
+NE CONTINUE PAS avant que l'utilisateur ait tapé "1".
 
 ---
 
-## Étape 3 — Récapitule le profil
+## Étape 2 — Expliquer le CLAUDE.md et poser les questions
 
-Après les 5 réponses, affiche ce bloc en remplissant les infos :
+Dis :
+
+La plupart des gens utilisent Claude de façon générique. Résultat : des réponses génériques.
+
+Le CLAUDE.md, c'est un fichier texte que Claude lit automatiquement à chaque session. Tu y écris qui tu es, ce que tu fais, comment tu travailles — et Claude s'adapte à toi. Pour toujours.
+
+On va le construire ensemble. 5 questions rapides.
+
+Puis pose les questions **une par une**, en attendant la réponse à chaque fois :
+
+**Question 1 :**
+"C'est quoi ton activité ? (créateur de contenu, e-commerce, coach, freelance, agence, autre — dis-moi en tes mots)"
+
+**Question 2 :**
+"Et pourquoi tu veux utiliser Claude Code ? Qu'est-ce que tu cherches à faire concrètement ?"
+
+**Question 3 :**
+"Ton niveau technique — sois honnête, c'est important pour que je m'adapte. (je ne code pas du tout / quelques bases / à l'aise avec la tech)"
+
+**Question 4 :**
+"Quels outils tu utilises au quotidien ? (Notion, Gmail, Shopify, Slack, Instagram... liste tout)"
+
+**Question 5 :**
+"Combien de temps par semaine tu peux y consacrer ? (moins d'1h / 1 à 3h / plus de 3h)"
+
+---
+
+## Étape 3 — Récapituler le profil
+
+Après les 5 réponses, affiche :
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
@@ -94,17 +110,19 @@ Après les 5 réponses, affiche ce bloc en remplissant les infos :
 ║   Temps dispo → [disponibilité]                           ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
-
-  Parfait. Je génère tout maintenant.
 ```
+
+Puis dis : "Parfait. Je génère ton CLAUDE.md maintenant. Tu vas voir un pop-up pour créer le fichier — approuve-le."
 
 Mémorise ces informations — les leçons suivantes s'adapteront à ce profil.
 
 ---
 
-## Étape 4 — Génère le CLAUDE.md personnalisé
+## Étape 4 — Générer et sauvegarder le CLAUDE.md
 
-Génère un fichier CLAUDE.md complet basé sur les réponses :
+Génère le contenu du CLAUDE.md basé sur les réponses, puis **crée le fichier directement** à `./CLAUDE.md` (dossier courant).
+
+Structure du fichier :
 
 ```
 # CLAUDE.md — [Type de business]
@@ -131,26 +149,59 @@ Génère un fichier CLAUDE.md complet basé sur les réponses :
 [3-5 tâches spécifiques au type de business]
 ```
 
-Puis dis : "Enregistre ce fichier sous le nom `CLAUDE.md` dans ton dossier projet. À chaque session, Claude aura ce contexte automatiquement."
+Après avoir créé le fichier, affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ██████░░░░░░░░░░░░░░ 1/3    │
+  │                                             │
+  │  ✅ CLAUDE.md créé                          │
+  │  ⚡ ÉTAPE 2 → Ta première skill custom      │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
+
+Puis dis : "Voilà. Ce fichier, Claude va le lire à chaque session dans ce dossier. Tu n'as plus jamais à te réexpliquer."
 
 ---
 
-## Étape 5 — Crée la première skill custom
+## Étape 5 — Créer la première skill custom
 
-Génère une skill adaptée au type de business :
+Dis :
 
-- **Créateur de contenu** → `/mon-business:idee-video` — génère 5 idées de vidéos en 30 secondes
-- **E-commerce** → `/mon-business:fiche-produit` — génère une fiche produit optimisée
-- **Coach/freelance** → `/mon-business:email-client` — rédige un email pro en 2 minutes
-- **Agence** → `/mon-business:brief-client` — structure un brief projet
+Maintenant on crée ta première skill. Une skill, c'est une commande que tu tapes dans Claude et qui déclenche un workflow complet — adapté à TON business.
 
-Montre le contenu complet de la skill, puis explique : "Crée un fichier avec ce nom dans `~/.claude/commands/` et tu peux l'utiliser immédiatement."
+Tu vas voir un pop-up pour créer le fichier — approuve-le.
+
+Génère une skill adaptée au type de business et **crée le fichier directement** dans `~/.claude/commands/` :
+
+- **Créateur de contenu** → `~/.claude/commands/mon-business/idee-video.md` — génère 5 idées de vidéos en 30 secondes
+- **E-commerce** → `~/.claude/commands/mon-business/fiche-produit.md` — génère une fiche produit optimisée
+- **Coach/freelance** → `~/.claude/commands/mon-business/email-client.md` — rédige un email pro en 2 minutes
+- **Agence** → `~/.claude/commands/mon-business/brief-client.md` — structure un brief projet
+
+Génère le contenu complet de la skill (avec frontmatter, instructions, règles), puis crée le fichier.
+
+Après, affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ████████████░░░░░░░░ 2/3    │
+  │                                             │
+  │  ✅ CLAUDE.md créé                          │
+  │  ✅ Skill custom créée                      │
+  │  ⚡ ÉTAPE 3 → Ton cadeau 🎁                 │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
 
 ---
 
 ## Étape 6 — Cadeau : Les 10 prompts qui changent tout 🎁
 
-Génère 10 prompts ultra-pratiques adaptés au type de business. Format :
+Génère 10 prompts ultra-pratiques adaptés au type de business :
 
 ```
 🎁 LES 10 PROMPTS QUI CHANGENT TOUT — [type de business]
@@ -162,11 +213,23 @@ Génère 10 prompts ultra-pratiques adaptés au type de business. Format :
 2. ...
 ```
 
+Génère les 10 dans ce format.
+
 ---
 
 ## Étape 7 — Conclusion
 
-Affiche ce bloc exactement :
+Affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ████████████████████ 3/3 ✅  │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
+
+Puis affiche ce bloc exactement :
 
 ```
 ═══════════════════════════════════════════════════════════════

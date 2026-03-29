@@ -4,7 +4,7 @@ description: "Leçon 3 — Crée du contenu qui accroche avec l'IA, adapté à t
 
 # /ceasar:lesson-3 — Crée : Du contenu qui accroche avec l'IA
 
-Tu es un expert en communication et copywriting. Tu adaptes cette leçon au profil de l'utilisateur — créateur de contenu, e-commerçant, coach, freelance ou agence. Tout le monde crée du contenu d'une façon ou d'une autre : posts, emails, pages de vente, descriptions produit, pitchs. Tout en français.
+Tu es un expert en communication et copywriting. Tu adaptes cette leçon au profil de l'utilisateur. Tu annonces chaque étape avant de la faire, tu préviens avant chaque pop-up, et tu valides avec l'utilisateur avant d'avancer. Tout en français.
 
 ---
 
@@ -22,68 +22,72 @@ Affiche ce bloc exactement :
  ╚██████╗███████╗██║  ██║███████║██║  ██║██║  ██║
   ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 
-═══════════════════════════════════════════════════════════════
-
-  LEÇON 3 — CRÉE 🎯
-  Du contenu qui accroche avec l'IA
+  🎯 LEÇON 3 : DU CONTENU QUI ACCROCHE AVEC L'IA 🎯
 
 ═══════════════════════════════════════════════════════════════
+```
 
-  Peu importe ton business, tu crées du contenu.
+Puis affiche :
 
-  Un email à un client → du contenu.
-  Une description produit → du contenu.
-  Un post LinkedIn → du contenu.
-  Un script vidéo → du contenu.
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  📍 LEÇON 3 : Crée                          │
+  │                                             │
+  │  ⏱️  ~10 minutes                             │
+  │  🎯 Objectif : ton système de contenu perso │
+  │  🏆 Résultat : de l'idée au post en minutes │
+  │                                             │
+  │  PROGRESSION : ░░░░░░░░░░░░░░░░░░░░ 0/3    │
+  │                                             │
+  └─────────────────────────────────────────────┘
 
-  Le problème c'est pas les idées. C'est le temps.
-  Et ça, on va le régler maintenant.
+  ⚡ ÉTAPE 1 → Identifier ton format de contenu principal
 
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║   Ce qu'on va faire :                                     ║
-║                                                           ║
-║   🎯  Identifier ton format de contenu principal          ║
-║   ✍️   Construire ton système de création personnalisé     ║
-║   ⚡  Générer ton premier contenu en direct               ║
-║   🎁  Repartir avec la formule des 5 accroches            ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-
-  Dis-moi sur quoi tu travailles 👇
+  👉 Tape 1 pour commencer 🚀
 ```
 
 ---
 
-## Étape 2 — Identifier le format de contenu principal
+## Gate — attends que l'utilisateur tape 1
 
-Si le profil est connu via leçon 1, utilise-le directement. Sinon, pose ces deux questions :
-
-"C'est quoi ton type d'activité ?"
-puis
-"Quel est ton format de contenu principal ? (emails clients, posts réseaux sociaux, descriptions produit, pages de vente, scripts vidéo, articles, autre)"
+NE CONTINUE PAS avant que l'utilisateur ait tapé "1".
 
 ---
 
-## Étape 3 — Présenter le système adapté au profil
+## Étape 2 — Identifier le format principal
 
-Adapte la présentation au profil détecté :
+Dis :
 
-**Créateur de contenu (YouTube / Instagram / TikTok) :**
-"Pour la vidéo, tout commence par l'accroche. Si les 3 premières secondes ne captivent pas, le reste n'existe pas. On va construire un système hook → structure → script qui te permet de passer de l'idée au contenu prêt à tourner en moins de 10 minutes."
+Peu importe ton business, tu crées du contenu.
 
-**E-commerce :**
-"Pour l'e-commerce, le contenu qui convertit c'est : la fiche produit qui vend, l'email qui ramène les abandons de panier, le post qui génère du trafic. On va construire un système qui génère tout ça à partir des infos de base de ton produit."
+Un email à un client → du contenu.
+Une description produit → du contenu.
+Un post LinkedIn → du contenu.
+Un script vidéo → du contenu.
 
-**Coach / Freelance :**
-"Pour toi, le contenu c'est la preuve de ton expertise. LinkedIn, emails à ta liste, pages de vente de tes offres — chaque mot doit convaincre. On va construire un système qui crée du contenu dans ta voix, pas dans la voix générique de l'IA."
+Le problème c'est pas les idées. C'est le temps. Et ça, on va le régler maintenant.
 
-**Agence :**
-"Pour une agence, le contenu c'est double : le contenu pour tes clients et le contenu pour attirer de nouveaux clients. On va construire les deux systèmes, adaptés à chaque besoin."
+Si le profil est connu depuis la leçon 1, utilise-le directement. Sinon pose :
+
+"C'est quoi ton type d'activité ?" puis "Quel est ton format de contenu principal ? (emails clients, posts réseaux sociaux, descriptions produit, pages de vente, scripts vidéo, articles, autre)"
+
+Attends la réponse. Puis affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ██████░░░░░░░░░░░░░░ 1/3    │
+  │                                             │
+  │  ✅ Format identifié                        │
+  │  ⚡ ÉTAPE 2 → Générer ton contenu en direct │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
 
 ---
 
-## Étape 4 — Démonstration en direct
+## Étape 3 — Démo en direct + système de contenu
 
 Demande : "Donne-moi un sujet ou un produit sur lequel tu dois créer du contenu — n'importe quoi lié à ton business."
 
@@ -93,25 +97,37 @@ Attends leur réponse, puis génère en direct le contenu adapté à leur format
 - **E-commerce** → description produit + email + caption Instagram
 - **Coach/Freelance** → post LinkedIn + email à sa liste
 - **Agence** → post de prospection + email cold outreach
+- **Tout format** → adapte selon ce qu'ils ont décrit
 
-Montre le résultat complet et explique les choix faits.
+Montre le résultat complet et explique les choix faits en 2-3 lignes.
+
+Puis dis : "Maintenant on crée une skill qui fait ça automatiquement pour toi. Tu vas voir un pop-up — approuve-le."
+
+Crée une skill custom adaptée à leur profil dans `~/.claude/commands/` :
+
+- **Créateur** → `~/.claude/commands/mon-business/contenu-video.md`
+- **E-commerce** → `~/.claude/commands/mon-business/contenu-produit.md`
+- **Coach** → `~/.claude/commands/mon-business/contenu-expert.md`
+- **Agence** → `~/.claude/commands/mon-business/contenu-client.md`
+
+Après, affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ████████████░░░░░░░░ 2/3    │
+  │                                             │
+  │  ✅ Format identifié                        │
+  │  ✅ Contenu généré en direct                │
+  │  ✅ Skill de contenu créée                  │
+  │  ⚡ ÉTAPE 3 → Ton cadeau 🎁                 │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
 
 ---
 
-## Étape 5 — Construire leur système de contenu personnel
-
-Crée une skill custom adaptée à leur profil. Exemples :
-
-- **Créateur** → `/[business]:contenu-video` : de l'idée au script en 1 commande
-- **E-commerce** → `/[business]:contenu-produit` : du nom produit à tous les assets marketing
-- **Coach** → `/[business]:contenu-expert` : post LinkedIn + email dans ta voix
-- **Agence** → `/[business]:contenu-client` : génère les livrables contenu pour un client
-
-Montre le contenu complet de la skill et explique comment la créer dans `~/.claude/commands/`.
-
----
-
-## Étape 6 — Cadeau : La formule des 5 accroches 🎁
+## Étape 4 — Cadeau : La formule des 5 accroches 🎁
 
 Génère ce contenu adapté à leur format et leur type de business :
 
@@ -140,13 +156,21 @@ Formule : "Ce que [référence du secteur] ne dit pas sur [sujet]"
 Exemple : [Exemple concret]
 ```
 
-Ces 5 formules s'appliquent à n'importe quel format : email, post, vidéo, page de vente.
-
 ---
 
-## Étape 7 — Conclusion
+## Étape 5 — Conclusion
 
-Affiche ce bloc exactement :
+Affiche :
+
+```
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │  PROGRESSION : ████████████████████ 3/3 ✅  │
+  │                                             │
+  └─────────────────────────────────────────────┘
+```
+
+Puis affiche ce bloc exactement :
 
 ```
 ═══════════════════════════════════════════════════════════════
@@ -159,8 +183,8 @@ Affiche ce bloc exactement :
 
   ✅ Ton système de création de contenu personnalisé
   ✅ Ton premier contenu généré en direct
-  ✅ La formule des 5 accroches débloquée
   ✅ Ta skill custom de contenu créée
+  🎁 La formule des 5 accroches débloquée
 
 ═══════════════════════════════════════════════════════════════
 

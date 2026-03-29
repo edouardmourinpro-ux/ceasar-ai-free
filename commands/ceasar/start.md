@@ -4,45 +4,88 @@ description: "Bienvenue dans le cours Ceasar.ai — présentation des 7 leçons 
 
 # /ceasar:start — Bienvenue dans Ceasar.ai
 
-Affiche exactement ce message de bienvenue, puis attends l'input de l'utilisateur.
+Affiche exactement ce message de bienvenue, puis attends l'input de l'utilisateur. Respecte le formatage ASCII à la lettre.
 
 ---
+
+Affiche ce bloc exactement :
 
 ```
-   ____  _____    _    ____    _    ____        _    ___
-  / ___|| ____|  / \  / ___|  / \  |  _ \      / \  |_ _|
- | |    |  _|   / _ \ \___ \ / _ \ | |_) |    / _ \  | |
- | |___ | |___ / ___ \ ___) / ___ \|  _ <    / ___ \ | |
-  \____||_____/_/   \_\____/_/   \_\_| \_\  /_/   \_\___|
+═══════════════════════════════════════════════════════════════
+
+  ██████╗███████╗ █████╗ ███████╗ █████╗ ██████╗
+ ██╔════╝██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗
+ ██║     █████╗  ███████║███████╗███████║██████╔╝
+ ██║     ██╔══╝  ██╔══██║╚════██║██╔══██║██╔══██╗
+ ╚██████╗███████╗██║  ██║███████║██║  ██║██║  ██║
+  ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+  ⚡ COURS CLAUDE CODE GRATUIT ⚡
+
+═══════════════════════════════════════════════════════════════
 ```
 
-**Bienvenue dans le cours Claude Code de Ceasar.ai.**
+Puis affiche :
 
-Tu es sur le point d'apprendre à utiliser Claude Code pour automatiser ton business, créer du contenu et builder des projets réels — même si tu n'es pas développeur.
+```
+  Wesh, bienvenue ! 🎉
 
-Ce cours est 100% interactif. Claude te guide, s'adapte à ton profil, et tu repars avec des choses concrètes à chaque leçon.
+  Je suis Edouard. Je construis des systèmes IA, j'automatise
+  des business, et je documente tout en public.
 
----
+  Voilà ce qu'on va faire ensemble :
 
-## Les 7 leçons du parcours
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   LE COURS                                                ║
+║                                                           ║
+║   Leçon 1  🧠  Setup — Claude apprend TON business        ║
+║               Ton CLAUDE.md + ta première skill           ║
+║                                                           ║
+║   Leçon 2  ⚡  Automatise — Ta première vraie auto        ║
+║               Un truc concret en production               ║
+║                                                           ║
+║   Leçon 3  🎯  Crée — Contenu viral avec l'IA             ║
+║               Hooks, scripts, posts adaptés à toi         ║
+║                                                           ║
+║   Leçon 4  🌐  Connecte — MCPs (Notion, Gmail...)         ║
+║               Claude parle à tes vrais outils             ║
+║                                                           ║
+║   Leçon 5  🤖  Agents — Ton équipe IA                     ║
+║               Plusieurs Claudes en parallèle              ║
+║                                                           ║
+║   Leçon 6  🏗️   Construis — Un vrai projet                 ║
+║               Claude build quelque chose pour toi         ║
+║                                                           ║
+║   Leçon 7  🏆  Système — Le tableau complet               ║
+║               Tout s'assemble. Accès communauté.          ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
 
-| Leçon | Commande | Ce que tu vas faire |
-|-------|----------|----------------------|
-| 1 — Setup | `/ceasar:lesson-1` | Configurer Claude Code pour TON business + CLAUDE.md personnalisé |
-| 2 — Automatise | `/ceasar:lesson-2` | Créer ta première automatisation concrète et utile |
-| 3 — Crée | `/ceasar:lesson-3` | Générer du contenu viral avec l'IA (hooks, scripts, posts) |
-| 4 — Connecte | `/ceasar:lesson-4` | Connecter tes outils via les MCPs (Notion, Gmail, etc.) |
-| 5 — Agents | `/ceasar:lesson-5` | Lancer plusieurs agents IA en parallèle sur tes tâches |
-| 6 — Construis | `/ceasar:lesson-6` | Builder ton premier vrai projet dans Claude Code |
-| 7 — Système | `/ceasar:lesson-7` | Le système complet + rejoindre la communauté premium |
+  7 leçons. ~1h au total. Tu repars avec :
 
----
+  ✅ Un Claude qui connaît TON business
+  ✅ Des skills custom que t'as toi-même construites
+  ✅ Un vrai projet fonctionnel
+  🎁 Des cadeaux débloqués à chaque leçon
 
-## Skills bonus déjà disponibles
+  Ce cours c'est pas "regarde et oublie".
 
-- **`/ceasar:hook-gen`** — Génère des hooks percutants pour tes vidéos et posts
-- **`/ceasar:script-fr`** — Écrit des scripts complets en français prêts à tourner
+  Tu vas CONSTRUIRE des trucs réels.
+  Ici. Dans ce terminal. Maintenant.
 
----
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   SKILLS GRATUITES INCLUSES                               ║
+║                                                           ║
+║   /ceasar:hook-gen   -- 10 hooks viraux en 30 secondes    ║
+║   /ceasar:script-fr  -- Script YouTube/Reel complet       ║
+║                                                           ║
+║   Disponibles tout de suite. Pas besoin d'attendre.       ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
 
-Tape **`/ceasar:lesson-1`** pour démarrer le parcours. On y va ?
+  T'es prêt à builder ton premier système IA ? 🔥
+
+  → Tape /ceasar:lesson-1 pour démarrer.
+```

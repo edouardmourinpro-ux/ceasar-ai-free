@@ -28,7 +28,7 @@ Affiche ce bloc exactement :
 Puis affiche :
 
 ```
-  Wesh, bienvenue ! 🎉
+  Bienvenue ! 🎉
 
   Je suis Edouard. Je construis des systèmes IA, j'automatise
   des business, et je documente tout en public.

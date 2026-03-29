@@ -15,23 +15,41 @@ Affiche ce bloc exactement :
 ```
 ═══════════════════════════════════════════════════════════════
 
-  LEÇON 7 — SYSTÈME 🏆
-  Le tableau complet
+  ██████╗███████╗ █████╗ ███████╗ █████╗ ██████╗
+ ██╔════╝██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗
+ ██║     █████╗  ███████║███████╗███████║██████╔╝
+ ██║     ██╔══╝  ██╔══██║╚════██║██╔══██║██╔══██╗
+ ╚██████╗███████╗██║  ██║███████║██║  ██║██║  ██║
+  ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 
 ═══════════════════════════════════════════════════════════════
 
-  Et voilà. Tu y es.
+  LEÇON 7 — SYSTÈME 🏆
+  Tu viens de voir 1% de ce qui est possible.
 
-  Si tu lis ces lignes, c'est que tu as traversé
-  les 6 premières leçons du cours Ceasar.ai.
+═══════════════════════════════════════════════════════════════
 
-  Ce n'est pas rien.
+  Tu viens de traverser 6 leçons.
+  Tu n'as pas regardé une vidéo — tu as construit
+  des trucs réels. Dans ton terminal. Pour vrai.
 
-  La plupart des gens qui téléchargent un cours ne vont
-  jamais au bout. Toi, tu as fait exactement l'inverse —
-  tu as bossé, tu as appris, tu as construit des trucs réels.
+  La plupart des gens ne vont jamais aussi loin.
+  Toi si. Maintenant laisse-moi être direct.
 
-  Pour ça, je voulais te dire : respect. 🤝
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   Ce que tu viens de voir, c'est 1% de ce qui            ║
+║   est possible avec Claude Code.                          ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+
+  L'outil sort des mises à jour majeures chaque jour.
+  Nouveaux patterns. Nouvelles intégrations.
+  Nouvelles façons de builder.
+
+  Les gens branchés maintenant ne seront pas
+  ceux qu'on remplace dans 6 mois.
+  Ils seront ceux qui décident.
 ```
 
 ---
@@ -111,68 +129,28 @@ Affiche ce bloc, adapté au profil de l'utilisateur si connu :
 
 ---
 
-## Étape 4 — Action automatique : Ouvrir Skool
-
-Exécute cette commande bash pour ouvrir la page Skool dans le navigateur :
-
-```bash
-open https://www.skool.com/ceasar-ai/about
-```
-
-Puis affiche : "Je viens d'ouvrir la page de la communauté Ceasar.ai dans ton navigateur."
-
----
-
-## Étape 5 — Pitch de la communauté premium
+## Étape 4 — Pitch et CTA
 
 Affiche ce bloc :
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                           ║
-║   LA PROCHAINE ÉTAPE : SKOOL CEASAR.AI                    ║
+║   J'ai créé une communauté pour aller jusqu'au bout.      ║
 ║                                                           ║
-║   Ce que tu as appris en 7 leçons, c'est le début.        ║
+║   Pas pour tout le monde.                                 ║
+║   Pour ceux qui ont compris que l'outil est sérieux       ║
+║   et qui veulent rester à la pointe — chaque jour.        ║
 ║                                                           ║
-║   Dans le Skool, on va 10x plus loin :                    ║
+║   Si t'es arrivé jusqu'ici, t'es probablement             ║
+║   exactement le profil.                                   ║
 ║                                                           ║
-║   👤  Accès direct à Edouard — tu poses, je réponds       ║
-║   📚  Cours avancés — agents complexes, automatisations   ║
-║   👥  La communauté — entrepreneurs qui utilisent         ║
-║       Claude Code comme toi                               ║
-║   ⚡  Nouveaux agents chaque semaine — prêts à installer  ║
-║   🎥  Sessions live — on build ensemble                   ║
+║   → Rejoindre la liste fondateurs                         ║
+║     skool.com/ceasar-ai                                   ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
-```
 
----
-
-## Étape 6 — Message final
-
-Affiche ce bloc :
-
-```
-  Tu as vu ce qui est possible en 7 leçons.
-
-  Un Claude qui connaît ton business.
-  Des automatisations qui tournent.
-  Du contenu créé en minutes.
-  Des MCPs connectés.
-  Des agents qui bossent en parallèle.
-  Un vrai projet fonctionnel.
-
-  Et tu n'as fait que gratter la surface.
-
-  Dans le Skool, on construit des systèmes complets.
-  On automatise des businesses entiers.
-  On build des projets ambitieux — ensemble.
-
-  La page est ouverte dans ton navigateur.
-  Si tu te reconnais dans ce que tu as vécu,
-  tu sais quoi faire.
-
-  À très vite de l'autre côté,
+  À très vite.
   Edouard — Ceasar.ai ⚡
 
 ═══════════════════════════════════════════════════════════════

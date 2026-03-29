@@ -76,7 +76,7 @@ Puis affiche :
 
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                           ║
-║   SKILLS GRATUITES INCLUSES                               ║
+║   BONUS SKILLS (déjà installées)                          ║
 ║                                                           ║
 ║   /ceasar:synthese   -- Résume n'importe quel contenu     ║
 ║                         URL, article, texte, sujet        ║
@@ -84,7 +84,8 @@ Puis affiche :
 ║   /ceasar:email-pro  -- Rédige un email pro en 1 min      ║
 ║                         Prospection, relance, client...   ║
 ║                                                           ║
-║   Disponibles tout de suite. Pas besoin d'attendre.       ║
+║   Utilisables maintenant. Même pas besoin de finir        ║
+║   le cours pour en profiter.                              ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
 

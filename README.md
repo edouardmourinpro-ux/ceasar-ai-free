@@ -91,6 +91,6 @@ Commandes disponibles dès l'installation :
 
 ## Rester connecté
 
-- **Communauté :** [Ceasar.ai Premium](https://www.skool.com/ceasar-ai/about) — cours avancés, live, communauté
+- **Communauté :** [Ceasar.ai Premium](https://www.skool.com/ceasar-ia-5256/about) — cours avancés, live, communauté
 - **Instagram :** [@ceasar.ia](https://instagram.com/ceasar.ia) — tutoriels IA au quotidien
 - **GitHub :** [edouardmourinpro-ux](https://github.com/edouardmourinpro-ux) — outils open source

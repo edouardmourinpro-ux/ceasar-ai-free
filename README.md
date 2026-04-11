@@ -77,15 +77,38 @@ Puis tape :
 
 ## Skills gratuites incluses
 
-Commandes disponibles dès l'installation :
+Toutes les skills sont téléchargées automatiquement via `install.sh`.
 
-| Commande | Ce que ça fait |
-|----------|----------------|
-| `/ceasar:synthese` | Résume n'importe quel contenu — URL, article, texte collé |
-| `/ceasar:email-pro` | Rédige n'importe quel email pro dans ta voix en 1 minute |
-| `/ceasar:hook-gen` | Génère 10 hooks viraux pour tes vidéos et posts |
-| `/ceasar:script-fr` | Écrit un script YouTube ou Reel complet dans ta voix |
-| `/ceasar:repro` | Reproduit une vidéo virale — analyse, adapte, script prêt à filmer |
+Si tu veux en installer une seule, utilise la commande `curl` correspondante.
+
+### Cours
+
+| Commande | Ce que ça fait | Installer seul |
+|----------|----------------|----------------|
+| `/ceasar:start` | Menu principal du cours | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/start.md -o ~/.claude/commands/ceasar/start.md` |
+| `/ceasar:lesson-1` | CLAUDE.md — Claude apprend ton business | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/lesson-1.md -o ~/.claude/commands/ceasar/lesson-1.md` |
+| `/ceasar:lesson-2` | Ta première skill | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/lesson-2.md -o ~/.claude/commands/ceasar/lesson-2.md` |
+| `/ceasar:lesson-3` | MCPs — connecte tes outils | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/lesson-3.md -o ~/.claude/commands/ceasar/lesson-3.md` |
+| `/ceasar:lesson-4` | Agents IA en parallèle | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/lesson-4.md -o ~/.claude/commands/ceasar/lesson-4.md` |
+| `/ceasar:lesson-5` | Build ton premier vrai projet | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/lesson-5.md -o ~/.claude/commands/ceasar/lesson-5.md` |
+| `/ceasar:lesson-6` | Le système complet | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/lesson-6.md -o ~/.claude/commands/ceasar/lesson-6.md` |
+| `/ceasar:synthese` | Résume n'importe quel contenu | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/synthese.md -o ~/.claude/commands/ceasar/synthese.md` |
+
+### Productivité
+
+| Commande | Ce que ça fait | Installer seul |
+|----------|----------------|----------------|
+| `/ceasar:email-pro` | Rédige n'importe quel email pro dans ta voix en 1 minute | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/email-pro.md -o ~/.claude/commands/ceasar/email-pro.md` |
+| `/ceasar:hook-gen` | Génère 10 hooks viraux pour tes vidéos et posts | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/hook-gen.md -o ~/.claude/commands/ceasar/hook-gen.md` |
+| `/ceasar:script-fr` | Écrit un script YouTube ou Reel complet dans ta voix | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/script-fr.md -o ~/.claude/commands/ceasar/script-fr.md` |
+| `/ceasar:repro` | Reproduit une vidéo virale — analyse, adapte, script prêt à filmer | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/repro.md -o ~/.claude/commands/ceasar/repro.md` |
+
+### Build & Deploy
+
+| Commande | Ce que ça fait | Installer seul |
+|----------|----------------|----------------|
+| `/ceasar:site-3d` | Guide complet — site web 3D scroll-driven en 30 min (Nano Banana 2 + Kling AI + Claude Code + Vercel) | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/site-3d.md -o ~/.claude/commands/ceasar/site-3d.md` |
+| `/ceasar:build-3d-site` | Technique — extraction frames, JS scroll-driven, déploiement | `curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/commands/ceasar/build-3d-site.md -o ~/.claude/commands/ceasar/build-3d-site.md` |
 
 ---
 

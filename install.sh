@@ -25,6 +25,8 @@ FILES=(
   "hook-gen.md"
   "script-fr.md"
   "repro.md"
+  "site-3d.md"
+  "build-3d-site.md"
 )
 
 for file in "${FILES[@]}"; do

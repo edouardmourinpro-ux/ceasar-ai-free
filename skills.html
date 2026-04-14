@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide des Skills Claude Code — Ceasar.ai</title>
+  <meta name="description" content="Guide complet des skills Claude Code. Officielles Anthropic, gstack de Garry Tan (YC), et skills Ceasar.ai gratuites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:      '#0a0a0a',
+            surface: '#111111',
+            border:  '#1e1e1e',
+            gold:    '#f5a623',
+            'gold-dim': 'rgba(245,166,35,0.15)',
+            'gold-line': 'rgba(245,166,35,0.25)',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+    .nav-blur { background: rgba(10,10,10,0.9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+    .card-hover { transition: border-color 0.2s, background 0.2s; }
+    .card-hover:hover { border-color: rgba(245,166,35,0.35); background: rgba(245,166,35,0.04); }
+    .btn-gold { transition: opacity 0.15s, transform 0.15s; }
+    .btn-gold:hover { opacity: 0.88; transform: translateY(-1px); }
+    .cmd { font-family: 'SF Mono', 'Fira Code', monospace; }
+    code { font-family: 'SF Mono', 'Fira Code', monospace; background: rgba(245,166,35,0.1); color: #f5a623; padding: 2px 7px; border-radius: 4px; font-size: 0.82em; }
+    .section-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f5a623; display: flex; align-items: center; gap: 10px; }
+    .section-label::before { content: ''; display: block; width: 20px; height: 1px; background: #f5a623; }
+    ::selection { background: rgba(245,166,35,0.25); }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav class="nav-blur fixed top-0 left-0 right-0 z-50 border-b border-border">
+  <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="index.html" class="font-bold text-base tracking-tight">Ceasar<span class="text-gold">.ai</span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-neutral-400">
+      <a href="index.html#install" class="hover:text-white transition-colors">Cours gratuit</a>
+      <a href="modes.html" class="hover:text-white transition-colors">Modes</a>
+    </div>
+    <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer"
+       class="btn-gold bg-gold text-black text-sm font-bold px-4 py-2 rounded">
+      Rejoindre →
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="pt-32 pb-16 px-6 border-b border-border">
+  <div class="max-w-5xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors mb-8">
+      ← Retour
+    </a>
+    <div class="section-label mb-4">Référence complète</div>
+    <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+      Le Guide Complet<br><span class="text-gold">des Skills Claude Code</span>
+    </h1>
+    <p class="text-neutral-400 text-base leading-relaxed max-w-xl">
+      Les skills sont des apps pour ton IA. Tu installes une skill, Claude apprend une nouvelle capacité. Voilà celles qui valent vraiment le coup.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════ CONTENU SKILLS ══════════════ -->
+<section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- Qu'est-ce qu'une skill -->
+    <div class="border border-border rounded-lg p-6">
+      <h2 class="font-bold text-base mb-3 flex items-center gap-2">
+        <span class="text-gold">▸</span> C'est quoi une skill ?
+      </h2>
+      <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+        Une skill = un fichier texte avec des instructions. Tu le déposes dans un dossier, Claude le lit, il sait quoi faire. Pas de téléchargement, pas de package manager.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-black rounded border border-border p-4">
+          <p class="text-xs text-neutral-500 mb-2 cmd">Globale (tous tes projets)</p>
+          <p class="cmd text-sm text-gold">~/.claude/commands/nom-skill.md</p>
+        </div>
+        <div class="bg-black rounded border border-border p-4">
+          <p class="text-xs text-neutral-500 mb-2 cmd">Locale (un projet uniquement)</p>
+          <p class="cmd text-sm text-gold">.claude/commands/nom-skill.md</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills officielles -->
+    <div>
+      <h2 class="font-bold text-lg mb-1">Skills officielles Anthropic</h2>
+      <p class="text-neutral-500 text-sm mb-4">Pré-installées, 100% sûres, 100% gratuites.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div class="card-hover border border-border rounded-lg p-4 flex gap-4">
+          <code class="self-start mt-0.5">/simplify</code>
+          <p class="text-neutral-400 text-sm leading-relaxed">Analyse ton code récent, lance 3 agents de review en parallèle, corrige les problèmes automatiquement.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4 flex gap-4">
+          <code class="self-start mt-0.5">/batch</code>
+          <p class="text-neutral-400 text-sm leading-relaxed">Applique des changements à grande échelle sur tout ton codebase en parallèle. Idéal pour les refactos massives.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4 flex gap-4">
+          <code class="self-start mt-0.5">/debug</code>
+          <p class="text-neutral-400 text-sm leading-relaxed">Lit les logs de ta session Claude Code et diagnostique ce qui ne fonctionne pas.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4 flex gap-4">
+          <code class="self-start mt-0.5">pdf / docx / pptx</code>
+          <p class="text-neutral-400 text-sm leading-relaxed">Crée des documents Word, PDF, PowerPoint directement depuis Claude Code.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- gstack — Featured skill -->
+    <div>
+      <h2 class="font-bold text-lg mb-1">La skill de Garry Tan <span class="text-neutral-500 text-xs font-normal ml-1">CEO de Y Combinator</span></h2>
+      <p class="text-neutral-500 text-sm mb-4">Garry Tan, CEO de Y Combinator — le programme qui a lancé Airbnb, Dropbox et Stripe — a publié sa liste personnelle de skills Claude Code. <strong class="text-white">gstack</strong> est sa principale : un navigateur headless qui permet à Claude de tester et d'inspecter n'importe quel site web directement depuis le terminal.</p>
+      <div class="card-hover border border-gold-line bg-gold-dim rounded-lg p-6 mb-4">
+        <div class="flex items-start gap-4 mb-4">
+          <div>
+            <div class="font-bold text-base mb-1">gstack <span class="text-xs text-gold font-bold ml-2 cmd">PAR GARRY TAN · YC</span></div>
+            <p class="text-neutral-400 text-sm leading-relaxed">Un navigateur headless intégré dans Claude Code. Tu lui donnes une URL, il ouvre la page, clique, remplit des formulaires, prend des screenshots et te rapporte ce qu'il voit. Plus besoin de tester manuellement.</p>
+          </div>
+        </div>
+        <div class="bg-black rounded border border-border p-4 mb-3 overflow-x-auto">
+          <p class="text-xs text-neutral-500 mb-2">Commande d'installation</p>
+          <p class="cmd text-sm text-gold whitespace-nowrap"><span class="text-neutral-600">$</span> git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup</p>
+        </div>
+        <a href="https://github.com/garrytan/gstack" target="_blank" rel="noreferrer"
+           class="inline-flex items-center gap-2 text-sm text-gold font-semibold hover:underline">
+          Voir sur GitHub →
+        </a>
+      </div>
+    </div>
+
+    <!-- Skills Ceasar.ai -->
+    <div>
+      <h2 class="font-bold text-lg mb-1">Skills Ceasar.ai <span class="text-gold text-xs font-bold ml-2 cmd">GRATUIT</span></h2>
+      <p class="text-neutral-500 text-sm mb-4">Installées via le cours gratuit. Conçues pour créer du contenu et builder des projets réels.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="card-hover border border-border rounded-lg p-4">
+          <code class="block mb-2">/ceasar:hook-gen</code>
+          <p class="text-neutral-500 text-sm">Génère 10 hooks viraux adaptés à ta niche en moins d'une minute.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4">
+          <code class="block mb-2">/ceasar:script-fr</code>
+          <p class="text-neutral-500 text-sm">Écrit un script YouTube ou Reel complet à partir d'une idée ou d'une URL.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4">
+          <code class="block mb-2">/ceasar:repro</code>
+          <p class="text-neutral-500 text-sm">Reproduit une vidéo virale avec ton angle et ta voix.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4">
+          <code class="block mb-2">/ceasar:synthese</code>
+          <p class="text-neutral-500 text-sm">Résume n'importe quel contenu en points actionnables.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4">
+          <code class="block mb-2">/ceasar:site-3d</code>
+          <p class="text-neutral-500 text-sm">Guide interactif pour créer un site web 3D scroll-driven en 30 min.</p>
+        </div>
+        <div class="card-hover border border-border rounded-lg p-4">
+          <code class="block mb-2">/ceasar:build-3d-site</code>
+          <p class="text-neutral-500 text-sm">Référence technique complète : frames, JS scroll-driven, WEBP, Vercel.</p>
+        </div>
+      </div>
+      <div class="mt-4 p-4 border border-gold-line bg-gold-dim rounded-lg">
+        <p class="text-sm text-neutral-300">Installe toutes ces skills en une commande via le cours gratuit →
+          <a href="index.html#install" class="text-gold font-semibold hover:underline ml-1">Voir l'installation</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Sécurité -->
+    <div class="border border-border rounded-lg p-6 bg-surface">
+      <h2 class="font-bold text-sm mb-2 flex items-center gap-2">
+        <span class="text-yellow-500">⚠</span> Avant d'installer une skill communautaire
+      </h2>
+      <p class="text-neutral-400 text-sm leading-relaxed mb-3">
+        Une étude Snyk (fév. 2026) a scanné 3 984 skills communautaires. Résultat : <strong class="text-white">36% contenaient des attaques par injection de prompt</strong>. Une skill malveillante peut lire tes fichiers, voler tes clés API ou exécuter des commandes cachées.
+      </p>
+      <ul class="text-sm text-neutral-500 space-y-1.5">
+        <li class="flex gap-2"><span class="text-gold">→</span> Reste sur les skills officielles Anthropic en priorité</li>
+        <li class="flex gap-2"><span class="text-gold">→</span> Lis toujours le fichier <code>.md</code> avant d'installer</li>
+        <li class="flex gap-2"><span class="text-gold">→</span> Méfie-toi si une skill demande <code>Bash(*)</code> sans raison claire</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="border-t border-border py-8 px-6">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <a href="index.html" class="text-sm font-bold">Ceasar<span class="text-gold">.ai</span></a>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500 justify-center">
+      <a href="index.html#install" class="hover:text-white transition-colors">Cours gratuit</a>
+      <a href="modes.html" class="hover:text-white transition-colors">Les Modes →</a>
+      <a href="https://www.notion.so/Claude-Managed-Agents-Guide-Complet-FR-3412ae791f4c81df9df7e74bb152a9d3" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Claude Managed Agents →</a>
+    </div>
+    <div class="flex gap-6 text-sm text-neutral-500">
+      <a href="https://github.com/edouardmourinpro-ux/ceasar-ai-free" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">GitHub</a>
+      <a href="https://instagram.com/ceasar.ia" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Instagram</a>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Skool</a>
+    </div>
+    <p class="text-xs text-neutral-700">© 2026 Ceasar.ai</p>
+  </div>
+</footer>
+
+</body>
+</html>

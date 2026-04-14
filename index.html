@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ceasar.ai — Maîtrise Claude Code. Gratuitement.</title>
+  <meta name="description" content="6 leçons gratuites, des skills prêtes à l'emploi et un cours interactif qui tourne dans ton terminal. Construit avec Claude Code, en français." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:      '#0a0a0a',
+            surface: '#111111',
+            border:  '#1e1e1e',
+            gold:    '#f5a623',
+            'gold-dim': 'rgba(245,166,35,0.15)',
+            'gold-line': 'rgba(245,166,35,0.25)',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+    .nav-blur { background: rgba(10,10,10,0.9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+    .card-hover { transition: border-color 0.2s, background 0.2s; }
+    .card-hover:hover { border-color: rgba(245,166,35,0.35); background: rgba(245,166,35,0.04); }
+    .btn-gold { transition: opacity 0.15s, transform 0.15s; }
+    .btn-gold:hover { opacity: 0.88; transform: translateY(-1px); }
+    .cmd { font-family: 'SF Mono', 'Fira Code', monospace; }
+    code { font-family: 'SF Mono', 'Fira Code', monospace; background: rgba(245,166,35,0.1); color: #f5a623; padding: 2px 7px; border-radius: 4px; font-size: 0.82em; }
+    .section-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f5a623; display: flex; align-items: center; gap: 10px; }
+    .section-label::before { content: ''; display: block; width: 20px; height: 1px; background: #f5a623; }
+    ::selection { background: rgba(245,166,35,0.25); }
+    .install-copy-btn { cursor: pointer; transition: color 0.15s; }
+    .install-copy-btn:hover { color: #f5a623; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav class="nav-blur fixed top-0 left-0 right-0 z-50 border-b border-border">
+  <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="#" class="font-bold text-base tracking-tight">Ceasar<span class="text-gold">.ai</span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-neutral-400">
+      <a href="#install" class="hover:text-white transition-colors">Cours gratuit</a>
+      <a href="#communaute" class="hover:text-white transition-colors">Communauté</a>
+    </div>
+    <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer"
+       class="btn-gold bg-gold text-black text-sm font-bold px-4 py-2 rounded">
+      Rejoindre →
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="pt-32 pb-16 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="section-label justify-center mb-6">Cours gratuit · Claude Code · En français</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+      Maîtrise Claude Code.<br>
+      <span class="text-gold">Construis des systèmes IA</span><br>
+      pour ton business.
+    </h1>
+    <p class="text-neutral-400 text-lg md:text-xl leading-relaxed mb-10 max-w-xl mx-auto">
+      6 leçons gratuites qui tournent directement dans ton terminal. Chaque leçon installe une vraie capacité dans Claude.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="#install" class="btn-gold bg-gold text-black font-bold px-7 py-3.5 rounded text-base w-full sm:w-auto text-center">
+        Commence maintenant — c'est gratuit
+      </a>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer"
+         class="text-sm text-neutral-400 hover:text-white transition-colors">
+        ou rejoins la communauté →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROOF PILLS ══════════════ -->
+<section class="pb-16 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <div class="flex items-center gap-2 border border-border rounded-full px-5 py-2.5 text-sm">
+        <span class="text-gold font-bold">✓</span>
+        <span class="text-neutral-300">6 leçons gratuites</span>
+      </div>
+      <div class="flex items-center gap-2 border border-border rounded-full px-5 py-2.5 text-sm">
+        <span class="text-gold font-bold">✓</span>
+        <span class="text-neutral-300">Skills prêtes à l'emploi</span>
+      </div>
+      <div class="flex items-center gap-2 border border-border rounded-full px-5 py-2.5 text-sm">
+        <span class="text-gold font-bold">✓</span>
+        <span class="text-neutral-300">Tourne dans ton terminal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ INSTALL BLOCK ══════════════ -->
+<section id="install" class="py-16 px-6 border-t border-border">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="mb-10 text-center">
+      <div class="section-label justify-center mb-4">Cours gratuit</div>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+        Installe le cours<br><span class="text-gold">en une commande</span>
+      </h2>
+    </div>
+
+    <!-- Prerequisite note -->
+    <div class="mb-6 p-4 border border-border rounded-lg bg-surface flex items-start gap-3">
+      <span class="text-yellow-500 text-base mt-0.5">ℹ</span>
+      <p class="text-sm text-neutral-400 leading-relaxed">
+        Tu as besoin de <strong class="text-white">Claude Code</strong> pour lancer ce cours.
+        Si tu ne l'as pas encore →
+        <a href="https://docs.anthropic.com/fr/claude/claude-code" target="_blank" rel="noreferrer"
+           class="text-gold font-semibold hover:underline">Installer Claude Code ↗</a>
+      </p>
+    </div>
+
+    <!-- Main install card -->
+    <div class="border border-gold-line bg-gold-dim rounded-xl p-6 md:p-8 mb-10">
+      <p class="text-sm font-semibold mb-4 text-neutral-300">Colle cette commande dans ton terminal :</p>
+
+      <!-- curl command -->
+      <div class="relative bg-black rounded-lg border border-border p-5 mb-4 overflow-x-auto group">
+        <button onclick="navigator.clipboard.writeText('curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/install.sh | bash').then(()=>{ this.textContent='Copié ✓'; setTimeout(()=>{ this.textContent='Copier'; },2000); })"
+                class="install-copy-btn absolute top-3 right-3 text-xs text-neutral-600 font-medium px-2.5 py-1 rounded border border-border bg-neutral-900 hover:border-gold-line">
+          Copier
+        </button>
+        <p class="cmd text-sm md:text-base text-gold whitespace-nowrap pr-16">
+          <span class="text-neutral-600">$</span> curl -fsSL https://raw.githubusercontent.com/edouardmourinpro-ux/ceasar-ai-free/main/install.sh | bash
+        </p>
+      </div>
+
+      <!-- Next step -->
+      <p class="text-sm text-neutral-400 mb-6">
+        Puis dans Claude Code, tape <code>/ceasar:start</code> pour commencer la leçon 1.
+      </p>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="https://github.com/edouardmourinpro-ux/ceasar-ai-free" target="_blank" rel="noreferrer"
+           class="btn-gold border border-gold-line text-gold text-sm font-semibold px-5 py-2.5 rounded hover:border-gold transition-colors">
+          Voir sur GitHub →
+        </a>
+        <span class="text-xs text-neutral-600 self-center">Gratuit · Open source · macOS &amp; Windows</span>
+      </div>
+    </div>
+
+    <!-- 6 lessons list -->
+    <div class="mb-10">
+      <h3 class="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-6">Ce que tu vas apprendre</h3>
+      <ol class="space-y-4">
+        <li class="flex items-start gap-4">
+          <span class="cmd text-gold text-xs font-bold mt-0.5 w-8 flex-shrink-0">01</span>
+          <div>
+            <p class="font-semibold text-sm">CLAUDE.md — Claude apprend ton business</p>
+            <p class="text-neutral-500 text-sm mt-0.5">Configure Claude avec ton nom, ton audience, ta voix. Il s'en souviendra à chaque session.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="cmd text-gold text-xs font-bold mt-0.5 w-8 flex-shrink-0">02</span>
+          <div>
+            <p class="font-semibold text-sm">Ta première skill</p>
+            <p class="text-neutral-500 text-sm mt-0.5">Crée une commande qui fait le travail à ta place. Tu l'appelles d'un mot, Claude exécute.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="cmd text-gold text-xs font-bold mt-0.5 w-8 flex-shrink-0">03</span>
+          <div>
+            <p class="font-semibold text-sm">Connecte tes outils (MCP)</p>
+            <p class="text-neutral-500 text-sm mt-0.5">Claude parle à tes apps — Notion, Gmail, Calendar. Automatise sans quitter le terminal.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="cmd text-gold text-xs font-bold mt-0.5 w-8 flex-shrink-0">04</span>
+          <div>
+            <p class="font-semibold text-sm">Ton équipe d'agents IA</p>
+            <p class="text-neutral-500 text-sm mt-0.5">Lance plusieurs Claudes en parallèle sur des tâches différentes. 5x plus vite.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="cmd text-gold text-xs font-bold mt-0.5 w-8 flex-shrink-0">05</span>
+          <div>
+            <p class="font-semibold text-sm">Build ton premier vrai projet</p>
+            <p class="text-neutral-500 text-sm mt-0.5">Tu décris ce que tu veux construire. Claude génère, itère, déploie. Zéro ligne de code.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4 border-l-2 border-gold pl-4 -ml-[1.25rem]">
+          <span class="cmd text-gold text-xs font-bold mt-0.5 w-8 flex-shrink-0">06</span>
+          <div>
+            <p class="font-semibold text-sm">Le système complet <span class="text-gold text-xs font-bold ml-2 cmd">FINAL</span></p>
+            <p class="text-neutral-500 text-sm mt-0.5">Tout s'assemble. Tu vois la puissance du système — et ce qui t'attend dans la communauté.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Email capture fallback -->
+    <!-- NOTE: Pour activer ce formulaire, crée un compte sur formspree.io, remplace [FORM_ID] par ton ID réel -->
+    <div class="border border-border rounded-lg p-6 bg-surface">
+      <p class="text-sm text-neutral-400 mb-3">
+        Pas encore sur Claude Code ? Laisse ton email — je t'envoie les ressources directement.
+      </p>
+      <form action="https://formspree.io/f/[FORM_ID]" method="POST"
+            onsubmit="this.querySelector('button').textContent='Envoyé ✓'"
+            class="flex flex-col sm:flex-row gap-3">
+        <input type="email" name="email" placeholder="ton@email.com" required
+               class="flex-1 bg-black border border-border rounded px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-gold-line transition-colors" />
+        <button type="submit"
+                class="btn-gold bg-gold text-black font-bold text-sm px-5 py-2.5 rounded flex-shrink-0">
+          Envoyer →
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ COMMUNAUTÉ ══════════════ -->
+<section id="communaute" class="py-24 px-6 border-t border-border">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="mb-10 text-center">
+      <div class="section-label justify-center mb-4">Pour aller plus loin</div>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+        Ce que tu débloques<br><span class="text-gold">dans la communauté</span>
+      </h2>
+      <p class="text-neutral-400 text-base leading-relaxed max-w-xl mx-auto">
+        Le cours gratuit te donne les bases. La communauté te donne les systèmes complets.
+      </p>
+    </div>
+
+    <!-- 3 benefits -->
+    <ul class="space-y-4 mb-10">
+      <li class="flex items-start gap-4 border border-border rounded-lg p-5">
+        <span class="text-gold text-lg mt-0.5 flex-shrink-0">✦</span>
+        <div>
+          <p class="font-semibold text-sm mb-1">Cours avancés — agents IA, automations, systèmes complets</p>
+          <p class="text-neutral-500 text-sm leading-relaxed">Ce que personne ne montre en public. Agents IA pour ton business, automatisations complexes, workflows de production.</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 border border-border rounded-lg p-5">
+        <span class="text-gold text-lg mt-0.5 flex-shrink-0">✦</span>
+        <div>
+          <p class="font-semibold text-sm mb-1">Lives mensuels + communauté de builders francophones</p>
+          <p class="text-neutral-500 text-sm leading-relaxed">Sessions en direct, questions en live, les seuls en France qui construisent vraiment avec Claude Code.</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 border border-border rounded-lg p-5">
+        <span class="text-gold text-lg mt-0.5 flex-shrink-0">✦</span>
+        <div>
+          <p class="font-semibold text-sm mb-1">20+ skills exclusives, mises à jour en continu</p>
+          <p class="text-neutral-500 text-sm leading-relaxed">Installables en 30 secondes. Chaque nouveau module = nouvelles capacités dans Claude.</p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- CTA block -->
+    <div class="border border-gold-line bg-gold-dim rounded-xl p-8 md:p-12 text-center">
+      <p class="text-sm text-neutral-400 mb-2">Formation complète</p>
+      <div class="text-5xl md:text-6xl font-extrabold tracking-tight mb-1">17€<span class="text-2xl font-normal text-neutral-400">/mois</span></div>
+      <p class="text-sm text-neutral-500 mb-8">Annulable à tout moment · Accès immédiat · Paiement sécurisé via Skool</p>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer"
+         class="btn-gold inline-block bg-gold text-black font-bold text-lg px-10 py-4 rounded">
+        Rejoindre la communauté →
+      </a>
+      <p class="text-xs text-neutral-600 mt-4">Passe à 27€ dès 60 membres — places limitées à ce prix</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="border-t border-border py-8 px-6">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="text-sm font-bold">Ceasar<span class="text-gold">.ai</span></div>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500 justify-center">
+      <a href="skills.html" class="hover:text-white transition-colors">Guide des Skills →</a>
+      <a href="modes.html" class="hover:text-white transition-colors">Les Modes →</a>
+      <a href="https://www.notion.so/Claude-Managed-Agents-Guide-Complet-FR-3412ae791f4c81df9df7e74bb152a9d3" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Claude Managed Agents →</a>
+    </div>
+    <div class="flex gap-6 text-sm text-neutral-500">
+      <a href="https://github.com/edouardmourinpro-ux/ceasar-ai-free" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">GitHub</a>
+      <a href="https://instagram.com/ceasar.ia" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Instagram</a>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Skool</a>
+    </div>
+    <p class="text-xs text-neutral-700">© 2026 Ceasar.ai — Fait avec Claude Code</p>
+  </div>
+</footer>
+
+</body>
+</html>

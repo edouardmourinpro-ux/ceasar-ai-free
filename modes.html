@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Modes de Claude Code — Ceasar.ai</title>
+  <meta name="description" content="Les trois modes Claude Code qui changent tout : Plan, Hooks, Swarm. La plupart des gens ne savent pas qu'ils existent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:      '#0a0a0a',
+            surface: '#111111',
+            border:  '#1e1e1e',
+            gold:    '#f5a623',
+            'gold-dim': 'rgba(245,166,35,0.15)',
+            'gold-line': 'rgba(245,166,35,0.25)',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+    .nav-blur { background: rgba(10,10,10,0.9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+    .card-hover { transition: border-color 0.2s, background 0.2s; }
+    .card-hover:hover { border-color: rgba(245,166,35,0.35); background: rgba(245,166,35,0.04); }
+    .btn-gold { transition: opacity 0.15s, transform 0.15s; }
+    .btn-gold:hover { opacity: 0.88; transform: translateY(-1px); }
+    .cmd { font-family: 'SF Mono', 'Fira Code', monospace; }
+    code { font-family: 'SF Mono', 'Fira Code', monospace; background: rgba(245,166,35,0.1); color: #f5a623; padding: 2px 7px; border-radius: 4px; font-size: 0.82em; }
+    .section-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f5a623; display: flex; align-items: center; gap: 10px; }
+    .section-label::before { content: ''; display: block; width: 20px; height: 1px; background: #f5a623; }
+    ::selection { background: rgba(245,166,35,0.25); }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav class="nav-blur fixed top-0 left-0 right-0 z-50 border-b border-border">
+  <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="index.html" class="font-bold text-base tracking-tight">Ceasar<span class="text-gold">.ai</span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-neutral-400">
+      <a href="index.html#install" class="hover:text-white transition-colors">Cours gratuit</a>
+      <a href="skills.html" class="hover:text-white transition-colors">Skills</a>
+    </div>
+    <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer"
+       class="btn-gold bg-gold text-black text-sm font-bold px-4 py-2 rounded">
+      Rejoindre →
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="pt-32 pb-16 px-6 border-b border-border">
+  <div class="max-w-5xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors mb-8">
+      ← Retour
+    </a>
+    <div class="section-label mb-4">Fonctionnalités avancées</div>
+    <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+      Les Meilleurs Modes<br><span class="text-gold">de Claude Code</span>
+    </h1>
+    <p class="text-neutral-400 text-base leading-relaxed max-w-xl">
+      La plupart des gens utilisent Claude Code comme un simple chat. Ces trois modes changent complètement ce qui est possible.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════ CONTENU MODES ══════════════ -->
+<section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto flex flex-col gap-6">
+
+    <!-- Mode Plan -->
+    <div class="card-hover border border-border rounded-lg p-7 md:p-8">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-shrink-0">
+          <div class="w-12 h-12 rounded-lg bg-gold-dim border border-gold-line flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="text-gold text-xs font-bold tracking-widest mb-2 cmd">MODE PLAN</div>
+          <h2 class="font-bold text-xl mb-3">Claude planifie avant d'agir</h2>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            Avant de toucher à un seul fichier, Claude t'affiche son plan complet étape par étape. Tu lis, tu corriges si besoin, tu valides — puis il exécute. Zéro surprise, zéro refacto inutile.
+          </p>
+          <div class="bg-black rounded border border-border p-4 mb-4">
+            <p class="text-xs text-neutral-500 mb-2">Comment l'activer</p>
+            <p class="cmd text-sm text-neutral-300">Appuie sur <span class="text-gold">Shift + Tab</span> dans Claude Code pour basculer en mode Plan.<br>Ou tape <span class="text-gold">/plan</span> au début de ta requête.</p>
+          </div>
+          <p class="text-xs text-neutral-600">Idéal pour : audits de code · refactos · builds complexes · tout ce qui touche à la prod</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mode Hooks -->
+    <div class="card-hover border border-border rounded-lg p-7 md:p-8">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-shrink-0">
+          <div class="w-12 h-12 rounded-lg bg-gold-dim border border-gold-line flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="text-gold text-xs font-bold tracking-widest mb-2 cmd">MODE HOOKS</div>
+          <h2 class="font-bold text-xl mb-3">Des actions automatiques avant et après chaque opération</h2>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            Les hooks sont des scripts shell qui se déclenchent automatiquement à chaque action de Claude — quand il lit un fichier, exécute une commande, ou modifie du code. Tu n'as rien à surveiller. Ça tourne tout seul.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+            <div class="bg-black rounded border border-border p-3">
+              <p class="text-xs text-gold mb-1 cmd">PreToolUse</p>
+              <p class="text-xs text-neutral-500">Se déclenche avant que Claude exécute une action. Permet de valider, bloquer ou logger.</p>
+            </div>
+            <div class="bg-black rounded border border-border p-3">
+              <p class="text-xs text-gold mb-1 cmd">PostToolUse</p>
+              <p class="text-xs text-neutral-500">Se déclenche après l'action. Parfait pour formatter, notifier, ou déclencher une autre tâche.</p>
+            </div>
+          </div>
+          <p class="text-xs text-neutral-600">Cas d'usage : logs automatiques · formatage du code à chaque save · notifications Slack · validations de sécurité</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mode Swarm -->
+    <div class="card-hover border border-border rounded-lg p-7 md:p-8">
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex-shrink-0">
+          <div class="w-12 h-12 rounded-lg bg-gold-dim border border-gold-line flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="5" cy="19" r="2"/><path d="M14 10l3.5-3.5M10 10L6.5 6.5M14 14l3.5 3.5M10 14l-3.5 3.5"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="text-gold text-xs font-bold tracking-widest mb-2 cmd">MODE SWARM</div>
+          <h2 class="font-bold text-xl mb-3">Plusieurs agents Claude en parallèle</h2>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            Au lieu d'un seul Claude qui fait tout en séquence, le mode Swarm lance plusieurs agents simultanément sur des tâches indépendantes. Chaque agent a son propre contexte. Le résultat arrive 5x plus vite.
+          </p>
+          <div class="bg-black rounded border border-border p-4 mb-4">
+            <p class="text-xs text-neutral-500 mb-2">Exemple concret</p>
+            <p class="cmd text-sm text-neutral-300">Agent 1 → génère le script<br>Agent 2 → recherche les hooks viraux<br>Agent 3 → adapte le format Reel<br><span class="text-gold">→ tout ça en simultané, pas l'un après l'autre</span></p>
+          </div>
+          <p class="text-xs text-neutral-600">Idéal pour : production de contenu en masse · traitement multi-fichiers · builds parallèles · recherche simultanée</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ CTA ══════════════ -->
+<section class="py-16 px-6 border-t border-border">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="text-neutral-400 text-base mb-6">
+      Tu veux aller plus loin ? Le cours gratuit t'apprend à utiliser tout ça en pratique.
+    </p>
+    <a href="index.html#install" class="btn-gold bg-gold text-black font-bold px-7 py-3.5 rounded text-base inline-block">
+      Accéder au cours gratuit →
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="border-t border-border py-8 px-6">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <a href="index.html" class="text-sm font-bold">Ceasar<span class="text-gold">.ai</span></a>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500 justify-center">
+      <a href="index.html#install" class="hover:text-white transition-colors">Cours gratuit</a>
+      <a href="skills.html" class="hover:text-white transition-colors">Guide des Skills →</a>
+      <a href="https://www.notion.so/Claude-Managed-Agents-Guide-Complet-FR-3412ae791f4c81df9df7e74bb152a9d3" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Claude Managed Agents →</a>
+    </div>
+    <div class="flex gap-6 text-sm text-neutral-500">
+      <a href="https://github.com/edouardmourinpro-ux/ceasar-ai-free" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">GitHub</a>
+      <a href="https://instagram.com/ceasar.ia" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Instagram</a>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Skool</a>
+    </div>
+    <p class="text-xs text-neutral-700">© 2026 Ceasar.ai</p>
+  </div>
+</footer>
+
+</body>
+</html>

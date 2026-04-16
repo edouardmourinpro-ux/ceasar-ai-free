@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sites 3D scroll-driven — Ceasar.ia</title>
+  <meta name="description" content="Builder un site scroll-driven avec animations cinématiques en 45 minutes. Sans coder une seule ligne. Gratuit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #fff; --bg: #F6F8FF; --ink: #09101F;
+      --ink-2: #374160; --ink-3: #7B86A8; --ink-4: #C2C8D8;
+      --blue: #1454F5; --blue-mid: #2F67FF; --blue-pale: #EAF0FF;
+      --blue-line: rgba(20,84,245,0.18); --rule: #E4E8F0;
+      --shadow-sm: 0 1px 3px rgba(9,16,31,0.06); --shadow-md: 0 4px 16px rgba(9,16,31,0.08);
+      --ff: 'Manrope', system-ui, sans-serif; --ff-mono: 'JetBrains Mono', monospace;
+      --max: 1100px; --ease: cubic-bezier(0.16,1,0.3,1);
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--white); color: var(--ink); font-family: var(--ff); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; }
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--rule); }
+    .nav-in { max-width: var(--max); margin: 0 auto; padding: 0 28px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.1rem; font-weight: 800; color: var(--ink); letter-spacing: -0.03em; }
+    .logo span { color: var(--blue); }
+    .nav-cta { background: var(--blue); color: #fff; font-size: .875rem; font-weight: 600; padding: 10px 20px; border-radius: 8px; transition: background .14s, transform .12s; }
+    .nav-cta:hover { background: var(--blue-mid); transform: translateY(-1px); }
+
+    .hero { padding: 110px 28px 60px; border-bottom: 1px solid var(--rule); }
+    .hero-in { max-width: 760px; margin: 0 auto; }
+    .back { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; color: var(--ink-3); margin-bottom: 28px; transition: color .14s; }
+    .back:hover { color: var(--ink); }
+    .tag { font-family: var(--ff-mono); font-size: .68rem; font-weight: 500; color: var(--blue); text-transform: uppercase; letter-spacing: .12em; display: block; margin-bottom: 12px; }
+    .h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 800; line-height: 1.07; letter-spacing: -.04em; color: var(--ink); margin-bottom: 18px; }
+    .h1 .hl { background: linear-gradient(135deg, var(--blue) 0%, #7C3AFF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { font-size: 1.0625rem; color: var(--ink-3); line-height: 1.7; max-width: 520px; }
+
+    .section { max-width: var(--max); margin: 0 auto; padding: 72px 28px; }
+    .h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -.03em; color: var(--ink); margin-bottom: 10px; line-height: 1.15; }
+    .h2 .hl { background: linear-gradient(135deg, var(--blue) 0%, #7C3AFF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .sub { font-size: 1rem; color: var(--ink-3); line-height: 1.65; max-width: 500px; margin-bottom: 40px; }
+
+    .steps-flow { display: flex; flex-direction: column; gap: 0; margin-bottom: 48px; }
+    .step-row {
+      display: flex; align-items: flex-start; gap: 20px; padding: 28px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .step-row:last-child { border-bottom: none; }
+    .step-left { display: flex; flex-direction: column; align-items: center; gap: 0; flex-shrink: 0; width: 48px; }
+    .step-circle { width: 48px; height: 48px; border-radius: 12px; background: var(--blue); color: #fff; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+    .step-line { width: 2px; flex: 1; background: var(--rule); min-height: 24px; }
+    .step-content { flex: 1; padding-top: 4px; }
+    .step-title { font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .step-desc { font-size: .9rem; color: var(--ink-3); line-height: 1.6; }
+    .step-tool { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-family: var(--ff-mono); font-size: .72rem; background: var(--blue-pale); color: var(--blue); padding: 4px 10px; border-radius: 6px; }
+    .step-time { font-family: var(--ff-mono); font-size: .65rem; font-weight: 600; color: var(--blue); background: var(--blue-pale); border: 1px solid var(--blue-line); padding: 2px 8px; border-radius: 4px; margin-left: 10px; letter-spacing: .06em; }
+
+    .preview-card { background: var(--bg); border: 1px solid var(--rule); border-radius: 16px; padding: 32px; margin-bottom: 48px; }
+    .preview-label { font-family: var(--ff-mono); font-size: .68rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .1em; display: block; margin-bottom: 16px; }
+    .preview-visual { background: #0D1117; border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+    .prev-line { font-family: var(--ff-mono); font-size: .8rem; color: rgba(255,255,255,.55); line-height: 1.7; }
+    .prev-check { color: #3FB950; }
+    .prev-cmd { color: #79C0FF; }
+    .prev-url { color: #E3B341; }
+
+    .cta-strip { background: linear-gradient(135deg, #06090F 0%, #0D1B3E 100%); border-radius: 20px; padding: 56px 40px; text-align: center; position: relative; overflow: hidden; }
+    .cta-strip::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(ellipse, rgba(20,84,245,.3) 0%, transparent 65%); pointer-events: none; }
+    .cta-strip-in { position: relative; z-index: 1; }
+    .cta-label { font-family: var(--ff-mono); font-size: .68rem; color: rgba(255,255,255,.3); text-transform: uppercase; letter-spacing: .14em; display: block; margin-bottom: 16px; }
+    .cta-title { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; color: #fff; letter-spacing: -.04em; margin-bottom: 12px; line-height: 1.1; }
+    .cta-sub { font-size: 1rem; color: rgba(255,255,255,.45); margin-bottom: 36px; }
+    .cta-btn { display: inline-block; background: #fff; color: var(--ink); font-size: 1rem; font-weight: 700; padding: 16px 40px; border-radius: 12px; transition: transform .13s, box-shadow .14s; box-shadow: 0 2px 12px rgba(0,0,0,.25); }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+    .cta-note { display: block; font-size: .75rem; color: rgba(255,255,255,.18); margin-top: 14px; }
+
+    .footer { border-top: 1px solid var(--rule); padding: 32px 28px; }
+    .footer-in { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; }
+    .footer-logo { font-size: 1rem; font-weight: 800; color: var(--ink); }
+    .footer-logo span { color: var(--blue); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a { font-size: .8125rem; font-weight: 500; color: var(--ink-3); transition: color .14s; }
+    .footer-links a:hover { color: var(--ink); }
+    .footer-copy { font-size: .75rem; color: var(--ink-4); }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index-light.html" class="logo">Ceasar<span>.ai</span></a>
+    <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="nav-cta">Rejoindre gratuitement →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-in">
+    <a href="index-light.html" class="back">← Retour</a>
+    <span class="tag">Valeur gratuite · Sites 3D</span>
+    <h1 class="h1">Un site scroll-driven<br><span class="hl">en 45 minutes.</span></h1>
+    <p class="hero-sub">Workflow complet : image Gemini → vidéo Kling → frames WEBP → site cinématique → déploiement Vercel. Sans coder une seule ligne.</p>
+  </div>
+</div>
+
+<div class="section">
+  <span class="tag">Le workflow</span>
+  <h2 class="h2">4 étapes.<br><span class="hl">45 minutes.</span></h2>
+  <p class="sub">Pas de framework. Pas de terminal. Claude fait tout. Tu fournis l'idée.</p>
+
+  <div class="steps-flow">
+    <div class="step-row">
+      <div class="step-left">
+        <div class="step-circle">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <p class="step-title">Image avec Gemini <span class="step-time">5 min</span></p>
+        <p class="step-desc">Tu décris le visuel de ton site à Gemini. Il génère une image de départ à haute qualité — le décor, l'ambiance, les couleurs. C'est le point de départ cinématique.</p>
+        <span class="step-tool">Gemini Image Generation</span>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-left">
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <p class="step-title">Vidéo avec Kling <span class="step-time">10 min</span></p>
+        <p class="step-desc">L'image devient une vidéo animée avec Kling AI. Un mouvement de caméra lent, cinématique — comme un dolly shot sur fond de ton produit ou de ton concept.</p>
+        <span class="step-tool">Kling AI · Image to Video</span>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-left">
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <p class="step-title">Frames WEBP avec Claude Code <span class="step-time">5 min</span></p>
+        <p class="step-desc">Claude Code extrait les frames de la vidéo et les convertit en WEBP optimisés. Il génère aussi le HTML/CSS/JS du site scroll-driven entier.</p>
+        <span class="step-tool">/ceasar:build-3d-site</span>
+      </div>
+    </div>
+    <div class="step-row">
+      <div class="step-left">
+        <div class="step-circle">4</div>
+      </div>
+      <div class="step-content">
+        <p class="step-title">Déploiement Vercel <span class="step-time">2 min</span></p>
+        <p class="step-desc">Une commande. Le site est en ligne sur Vercel avec une URL publique. Prêt à partager, prêt à convertir.</p>
+        <span class="step-tool">▲ vercel deploy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <span class="preview-label">Ce que Claude génère</span>
+    <div class="preview-visual">
+      <div class="prev-line"><span class="prev-check">✓</span> Extraction de 60 frames depuis la vidéo...</div>
+      <div class="prev-line"><span class="prev-check">✓</span> Conversion en WEBP optimisés (−72% de poids)</div>
+      <div class="prev-line"><span class="prev-check">✓</span> Génération du scroll engine CSS + JS</div>
+      <div class="prev-line"><span class="prev-check">✓</span> Build complet — <span class="prev-cmd">index.html</span> prêt</div>
+      <div class="prev-line"><span class="prev-url">→ https://mon-site.vercel.app</span> <span style="color:rgba(255,255,255,.3)">· déployé en 47 secondes</span></div>
+    </div>
+  </div>
+
+  <div class="cta-strip">
+    <div class="cta-strip-in">
+      <span class="cta-label">Skills + Guide interactif + Communauté</span>
+      <div class="cta-title">Le guide complet<br>t'attend sur Skool.</div>
+      <p class="cta-sub">Avec la skill, le guide interactif, et des exemples de sites terminés.</p>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="cta-btn">Rejoindre gratuitement →</a>
+      <span class="cta-note">Aucune carte bancaire · Accès immédiat</span>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-in">
+    <a href="index-light.html" class="footer-logo">Ceasar<span>.ai</span></a>
+    <div class="footer-links">
+      <a href="index-light.html">← Toutes les ressources</a>
+      <a href="value-claudemd.html">CLAUDE.md →</a>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer">Skool</a>
+      <a href="https://instagram.com/ceasar.ia" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Ceasar.ia</p>
+  </div>
+</footer>
+
+</body>
+</html>

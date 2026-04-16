@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hooks viraux gratuits — Ceasar.ia</title>
+  <meta name="description" content="Génère 10 hooks viraux adaptés à ta niche en 30 secondes avec Claude Code. Gratuit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #fff; --bg: #F6F8FF; --ink: #09101F;
+      --ink-2: #374160; --ink-3: #7B86A8; --ink-4: #C2C8D8;
+      --blue: #1454F5; --blue-mid: #2F67FF; --blue-pale: #EAF0FF;
+      --blue-line: rgba(20,84,245,0.18); --rule: #E4E8F0;
+      --shadow-sm: 0 1px 3px rgba(9,16,31,0.06); --shadow-md: 0 4px 16px rgba(9,16,31,0.08);
+      --ff: 'Manrope', system-ui, sans-serif; --ff-mono: 'JetBrains Mono', monospace;
+      --max: 1100px; --ease: cubic-bezier(0.16,1,0.3,1);
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--white); color: var(--ink); font-family: var(--ff); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; }
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--rule); }
+    .nav-in { max-width: var(--max); margin: 0 auto; padding: 0 28px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.1rem; font-weight: 800; color: var(--ink); letter-spacing: -0.03em; }
+    .logo span { color: var(--blue); }
+    .nav-cta { background: var(--blue); color: #fff; font-size: .875rem; font-weight: 600; padding: 10px 20px; border-radius: 8px; transition: background .14s, transform .12s; }
+    .nav-cta:hover { background: var(--blue-mid); transform: translateY(-1px); }
+
+    .hero { padding: 110px 28px 60px; border-bottom: 1px solid var(--rule); }
+    .hero-in { max-width: 760px; margin: 0 auto; }
+    .back { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; color: var(--ink-3); margin-bottom: 28px; transition: color .14s; }
+    .back:hover { color: var(--ink); }
+    .tag { font-family: var(--ff-mono); font-size: .68rem; font-weight: 500; color: var(--blue); text-transform: uppercase; letter-spacing: .12em; display: block; margin-bottom: 12px; }
+    .h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 800; line-height: 1.07; letter-spacing: -.04em; color: var(--ink); margin-bottom: 18px; }
+    .h1 .hl { background: linear-gradient(135deg, var(--blue) 0%, #7C3AFF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { font-size: 1.0625rem; color: var(--ink-3); line-height: 1.7; max-width: 520px; }
+
+    .section { max-width: var(--max); margin: 0 auto; padding: 72px 28px; }
+    .h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -.03em; color: var(--ink); margin-bottom: 10px; line-height: 1.15; }
+    .h2 .hl { background: linear-gradient(135deg, var(--blue) 0%, #7C3AFF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .sub { font-size: 1rem; color: var(--ink-3); line-height: 1.65; max-width: 500px; margin-bottom: 40px; }
+
+    .hooks-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 36px; }
+    @media(max-width:700px) { .hooks-grid { grid-template-columns: 1fr; } }
+    .hook-card {
+      background: var(--white); border: 1px solid var(--rule); border-radius: 14px;
+      padding: 24px 22px 20px; position: relative; overflow: hidden;
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+    }
+    .hook-card:hover { border-color: var(--blue); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .hook-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue), #7C3AFF); opacity: 0; transition: opacity .2s; }
+    .hook-card:hover::before { opacity: 1; }
+    .hook-num { font-family: var(--ff-mono); font-size: .62rem; font-weight: 600; color: var(--blue); text-transform: uppercase; letter-spacing: .1em; display: block; margin-bottom: 10px; }
+    .hook-text { font-size: .9375rem; font-weight: 700; color: var(--ink); line-height: 1.45; letter-spacing: -.01em; }
+    .hook-footer { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: .75rem; color: var(--ink-3); display: flex; align-items: center; gap: 6px; }
+    .hook-tag { background: var(--blue-pale); color: var(--blue); font-size: .65rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; font-family: var(--ff-mono); }
+
+    .how-box { background: var(--bg); border: 1px solid var(--rule); border-radius: 16px; padding: 32px; margin-bottom: 48px; }
+    .how-title { font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 20px; }
+    .steps { display: flex; flex-direction: column; gap: 14px; }
+    .step { display: flex; align-items: flex-start; gap: 14px; }
+    .step-num { width: 28px; height: 28px; border-radius: 8px; background: var(--blue); color: #fff; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-text { font-size: .9375rem; color: var(--ink-2); line-height: 1.6; }
+    .step-text code { font-family: var(--ff-mono); background: var(--blue-pale); color: var(--blue); padding: 2px 7px; border-radius: 4px; font-size: .82em; }
+
+    .cta-strip { background: linear-gradient(135deg, #06090F 0%, #0D1B3E 100%); border-radius: 20px; padding: 56px 40px; text-align: center; position: relative; overflow: hidden; }
+    .cta-strip::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(ellipse, rgba(20,84,245,.3) 0%, transparent 65%); pointer-events: none; }
+    .cta-strip-in { position: relative; z-index: 1; }
+    .cta-label { font-family: var(--ff-mono); font-size: .68rem; color: rgba(255,255,255,.3); text-transform: uppercase; letter-spacing: .14em; display: block; margin-bottom: 16px; }
+    .cta-title { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; color: #fff; letter-spacing: -.04em; margin-bottom: 12px; line-height: 1.1; }
+    .cta-sub { font-size: 1rem; color: rgba(255,255,255,.45); margin-bottom: 36px; }
+    .cta-btn { display: inline-block; background: #fff; color: var(--ink); font-size: 1rem; font-weight: 700; padding: 16px 40px; border-radius: 12px; transition: transform .13s, box-shadow .14s; box-shadow: 0 2px 12px rgba(0,0,0,.25); }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+    .cta-note { display: block; font-size: .75rem; color: rgba(255,255,255,.18); margin-top: 14px; }
+
+    .footer { border-top: 1px solid var(--rule); padding: 32px 28px; }
+    .footer-in { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; }
+    .footer-logo { font-size: 1rem; font-weight: 800; color: var(--ink); }
+    .footer-logo span { color: var(--blue); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a { font-size: .8125rem; font-weight: 500; color: var(--ink-3); transition: color .14s; }
+    .footer-links a:hover { color: var(--ink); }
+    .footer-copy { font-size: .75rem; color: var(--ink-4); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index-light.html" class="logo">Ceasar<span>.ai</span></a>
+    <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="nav-cta">Rejoindre gratuitement →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-in">
+    <a href="index-light.html" class="back">← Retour</a>
+    <span class="tag">Valeur gratuite · Hooks viraux</span>
+    <h1 class="h1">10 hooks viraux.<br><span class="hl">En 30 secondes.</span></h1>
+    <p class="hero-sub">Voilà ce que génère la skill <code style="font-family:var(--ff-mono);background:var(--blue-pale);color:var(--blue);padding:2px 8px;border-radius:4px">/ceasar:hook-gen</code>. 3 exemples réels ci-dessous. Les 7 autres t'attendent sur Skool.</p>
+  </div>
+</div>
+
+<div class="section">
+  <span class="tag">Exemples générés</span>
+  <h2 class="h2">3 hooks réels.<br><span class="hl">Prêts à utiliser.</span></h2>
+  <p class="sub">Générés avec la skill Ceasar.ia. Adaptés à ta niche en un mot.</p>
+
+  <div class="hooks-grid">
+    <div class="hook-card">
+      <span class="hook-num">Hook 01</span>
+      <p class="hook-text">« J'ai automatisé 4 heures de travail par jour avec Claude Code. Voici exactement comment. »</p>
+      <div class="hook-footer"><span class="hook-tag">/ceasar:hook-gen</span> <span>Niche business</span></div>
+    </div>
+    <div class="hook-card">
+      <span class="hook-num">Hook 02</span>
+      <p class="hook-text">« Personne ne vous dit ça sur l'IA : vous n'avez pas besoin d'être développeur pour construire avec Claude Code. »</p>
+      <div class="hook-footer"><span class="hook-tag">/ceasar:hook-gen</span> <span>Niche IA</span></div>
+    </div>
+    <div class="hook-card">
+      <span class="hook-num">Hook 03</span>
+      <p class="hook-text">« J'ai demandé à Claude Code de me construire un site entier pendant que je dormais. Résultat le matin. »</p>
+      <div class="hook-footer"><span class="hook-tag">/ceasar:hook-gen</span> <span>Niche création</span></div>
+    </div>
+  </div>
+
+  <div class="how-box">
+    <p class="how-title">Comment générer les tiens en 30 secondes</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <p class="step-text">Rejoins Skool gratuitement et installe Claude Code (leçon 1 du cours).</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <p class="step-text">Tape <code>/ceasar:hook-gen</code> dans Claude Code et précise ta niche.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <p class="step-text">Claude génère 10 hooks viraux adaptés à ton audience en quelques secondes. Copy-paste sur Instagram, TikTok ou YouTube.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-strip">
+    <div class="cta-strip-in">
+      <span class="cta-label">7 autres hooks + 6 skills supplémentaires</span>
+      <div class="cta-title">Les 7 autres hooks<br>t'attendent sur Skool.</div>
+      <p class="cta-sub">Avec toutes les autres ressources. Gratuit.</p>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="cta-btn">Rejoindre gratuitement →</a>
+      <span class="cta-note">Aucune carte bancaire · Accès immédiat</span>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-in">
+    <a href="index-light.html" class="footer-logo">Ceasar<span>.ai</span></a>
+    <div class="footer-links">
+      <a href="index-light.html">← Toutes les ressources</a>
+      <a href="value-cours.html">Le cours complet →</a>
+      <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer">Skool</a>
+      <a href="https://instagram.com/ceasar.ia" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+    <p class="footer-copy">© 2026 Ceasar.ia</p>
+  </div>
+</footer>
+
+</body>
+</html>

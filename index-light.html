@@ -146,12 +146,12 @@
       border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
       background: var(--bg); padding: 20px 28px;
     }
-    .stats-in { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
-    .stat-item { display: flex; align-items: center; gap: 10px; }
-    .stat-num { font-size: 1.5rem; font-weight: 800; color: var(--ink); letter-spacing: -.03em; }
-    .stat-label { font-size: .8125rem; font-weight: 500; color: var(--ink-3); }
-    .stat-text { font-size: .8125rem; font-weight: 600; color: var(--ink-2); }
-    .stat-sep { width: 1px; height: 28px; background: var(--rule); margin: 0 8px; }
+    .stats-in { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: center; }
+    .stat-item { display: flex; align-items: center; gap: 12px; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--ink); letter-spacing: -.04em; }
+    .stat-label { font-size: .9375rem; font-weight: 500; color: var(--ink-3); }
+    .stat-text { font-size: .9375rem; font-weight: 700; color: var(--ink-2); }
+    .stat-sep { width: 1px; height: 36px; background: var(--rule); margin: 0 12px; }
 
     /* ── MARQUEE ── */
     .marquee-wrap {
@@ -175,13 +175,17 @@
       padding: 96px 28px;
     }
     .pain-dark-in { max-width: var(--max); margin: 0 auto; }
-    .pain-dark .tag { color: rgba(20,84,245,.7); margin-bottom: 16px; }
+    .pain-dark .tag { color: #7BA7FF; margin-bottom: 16px; }
     .pain-dark-title {
-      font-size: clamp(1.875rem, 3.5vw, 3rem); font-weight: 800;
-      line-height: 1.1; letter-spacing: -.04em; color: #fff; margin-bottom: 14px;
+      font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 800;
+      line-height: 1.08; letter-spacing: -.04em; color: #fff; margin-bottom: 14px;
+    }
+    .pain-dark-title .hl {
+      background: linear-gradient(135deg, #4B7BFF 0%, #9B6FFF 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .pain-dark-sub {
-      font-size: 1rem; color: rgba(255,255,255,.4); line-height: 1.65;
+      font-size: 1.0625rem; color: rgba(255,255,255,.55); line-height: 1.65;
       max-width: 520px; margin-bottom: 56px;
     }
     .pain-list { display: flex; flex-direction: column; }
@@ -197,15 +201,19 @@
       width: 28px; text-align: right; padding-top: 2px;
     }
     .pain-text {
-      font-size: clamp(1rem, 1.8vw, 1.1875rem); font-weight: 700;
-      color: rgba(255,255,255,.88); line-height: 1.45; letter-spacing: -.02em;
+      font-size: clamp(1.0625rem, 1.9vw, 1.25rem); font-weight: 700;
+      color: rgba(255,255,255,.92); line-height: 1.45; letter-spacing: -.02em;
       flex: 1;
     }
     .pain-text em {
       font-style: normal;
-      color: rgba(255,255,255,.35);
+      color: rgba(255,255,255,.45);
       font-weight: 400;
       font-size: .95em;
+    }
+    .pain-text .hl-blue {
+      color: #7BA7FF;
+      font-style: normal;
     }
 
     /* ── VISION SECTION ── */
@@ -237,8 +245,8 @@
       color: var(--blue); letter-spacing: .1em; text-transform: uppercase;
       display: block; margin-bottom: 14px;
     }
-    .pillar-title { font-size: 1rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -.02em; }
-    .pillar-text { font-size: .875rem; color: var(--ink-3); line-height: 1.6; }
+    .pillar-title { font-size: 1.0625rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -.02em; }
+    .pillar-text { font-size: .9375rem; color: var(--ink-3); line-height: 1.6; }
 
     /* ── SECTIONS ── */
     .section { max-width: var(--max); margin: 0 auto; padding: 80px 28px; }
@@ -312,7 +320,8 @@
     .cta-in { position: relative; z-index: 1; }
     .cta-eyebrow { font-family: var(--ff-mono); font-size: .6875rem; font-weight: 500; color: rgba(255,255,255,.3); text-transform: uppercase; letter-spacing: .14em; display: block; margin-bottom: 20px; }
     .cta-title { font-size: clamp(2.75rem, 6vw, 5rem); font-weight: 800; line-height: 1.0; color: #fff; letter-spacing: -.04em; margin-bottom: 16px; }
-    .cta-sub { font-size: 1.0625rem; color: rgba(255,255,255,.45); margin-bottom: 44px; line-height: 1.6; }
+    .cta-sub { font-size: 1.0625rem; color: rgba(255,255,255,.7); margin-bottom: 44px; line-height: 1.6; }
+    .cta-sub strong { color: #fff; font-weight: 700; }
     .cta-btn {
       display: inline-block; background: #fff; color: var(--ink);
       font-size: 1rem; font-weight: 700; padding: 17px 44px; border-radius: 12px;
@@ -473,7 +482,7 @@
   <div class="pain-dark-in">
     <span class="tag stag" style="animation-delay:.1s">Tu te reconnais ?</span>
     <h2 class="pain-dark-title stag" style="animation-delay:.15s">
-      Si tu lis ça, c'est que tu n'es<br>pas encore dans le train.
+      Si tu lis ça, tu n'es<br><span class="hl">pas encore dans le train.</span>
     </h2>
     <p class="pain-dark-sub stag" style="animation-delay:.2s">
       La plupart des gens voient l'IA passer. Les autres la construisent.
@@ -481,27 +490,27 @@
     <div class="pain-list">
       <div class="pain-item stag" style="animation-delay:.22s">
         <span class="pain-num">01</span>
-        <p class="pain-text">Tu passes des heures sur YouTube <em>mais tu ne sais toujours pas par où commencer concrètement.</em></p>
+        <p class="pain-text">Tu passes des heures sur YouTube <em>mais tu ne sais toujours pas par où <span class="hl-blue">commencer concrètement.</span></em></p>
       </div>
       <div class="pain-item stag" style="animation-delay:.28s">
         <span class="pain-num">02</span>
-        <p class="pain-text">Tu vois des créateurs builder des outils en 30 minutes <em>et ça te semble hors de portée.</em></p>
+        <p class="pain-text">Tu vois des créateurs builder des outils <span class="hl-blue">en 30 minutes</span> <em>et ça te semble hors de portée.</em></p>
       </div>
       <div class="pain-item stag" style="animation-delay:.34s">
         <span class="pain-num">03</span>
-        <p class="pain-text">Tu as entendu parler de Claude Code <em>mais tu ne sais pas vraiment ce qu'on peut faire avec.</em></p>
+        <p class="pain-text">Tu as entendu parler de <span class="hl-blue">Claude Code</span> <em>mais tu ne sais pas vraiment ce qu'on peut faire avec.</em></p>
       </div>
       <div class="pain-item stag" style="animation-delay:.40s">
         <span class="pain-num">04</span>
-        <p class="pain-text">Tu veux automatiser ton workflow <em>mais tu n'es pas développeur et tu ne veux pas le devenir.</em></p>
+        <p class="pain-text">Tu veux <span class="hl-blue">automatiser ton workflow</span> <em>mais tu n'es pas développeur et tu ne veux pas le devenir.</em></p>
       </div>
       <div class="pain-item stag" style="animation-delay:.46s">
         <span class="pain-num">05</span>
-        <p class="pain-text">Tu utilises ChatGPT pour rédiger <em>mais tu sens que tu passes à côté de quelque chose de bien plus puissant.</em></p>
+        <p class="pain-text">Tu utilises ChatGPT <em>mais tu sens que tu passes à côté de <span class="hl-blue">quelque chose de bien plus puissant.</span></em></p>
       </div>
       <div class="pain-item stag" style="animation-delay:.52s">
         <span class="pain-num">06</span>
-        <p class="pain-text">Tu veux créer du contenu avec l'IA <em>mais tu n'as pas de système et ça te prend trop de temps.</em></p>
+        <p class="pain-text">Tu veux <span class="hl-blue">créer du contenu avec l'IA</span> <em>mais tu n'as pas de système et ça te prend trop de temps.</em></p>
       </div>
     </div>
   </div>
@@ -607,8 +616,8 @@
   <div class="cta-card stag" style="animation-delay:.1s">
     <div class="cta-in">
       <span class="cta-eyebrow">Ceasar.ia · Skool · Communauté</span>
-      <div class="cta-title">On construit demain.<br>Rejoins-nous.</div>
-      <p class="cta-sub">La communauté d'entrepreneurs qui mettent l'IA au coeur de leur business.<br>Gratuit. En français. Maintenant.</p>
+      <div class="cta-title">On construit demain.<br><span style="background:linear-gradient(135deg,#4B7BFF 0%,#9B6FFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Rejoins-nous.</span></div>
+      <p class="cta-sub">La communauté d'entrepreneurs qui mettent <strong>l'IA au coeur de leur business.</strong><br><strong>Gratuit.</strong> En français. Maintenant.</p>
       <a href="https://www.skool.com/ceasar-ia-5256/about" target="_blank" rel="noreferrer" class="cta-btn">Rejoindre gratuitement →</a>
       <span class="cta-note">Aucune carte bancaire · Accès immédiat · En français</span>
     </div>

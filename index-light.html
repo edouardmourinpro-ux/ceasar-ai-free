@@ -154,8 +154,8 @@
 
     /* ── MARQUEE ── */
     .marquee-wrap {
-      border-bottom: 1px solid var(--rule);
-      padding: 13px 0; overflow: hidden;
+      background: #06090F;
+      padding: 14px 0; overflow: hidden;
     }
     .marquee-track {
       display: flex; gap: 0; width: max-content;
@@ -163,10 +163,10 @@
     }
     .marquee-item {
       display: inline-flex; align-items: center; gap: 10px;
-      padding: 0 28px; font-size: .8125rem; font-weight: 600; color: var(--ink-2);
+      padding: 0 28px; font-size: .8125rem; font-weight: 600; color: rgba(255,255,255,.45);
       white-space: nowrap;
     }
-    .marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+    .marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(20,84,245,.7); flex-shrink: 0; }
 
     /* ── PAIN POINTS — section dark ── */
     .pain-dark {
@@ -225,7 +225,7 @@
       line-height: 1.1; letter-spacing: -.04em; color: var(--ink); margin-bottom: 20px;
     }
     .vision-title .hl {
-      background: linear-gradient(135deg, var(--blue) 0%, #7C3AFF 100%);
+      background: linear-gradient(135deg, #1454F5 0%, #7C3AFF 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .vision-sub { font-size: 1.125rem; color: var(--ink-3); line-height: 1.7; max-width: 580px; }
@@ -521,7 +521,7 @@
     <div class="vision-head">
       <span class="tag stag" style="animation-delay:.1s">Pourquoi Ceasar.ia</span>
       <h2 class="vision-title stag" style="animation-delay:.15s">
-        On construit <span class="hl">la plus grande<br>communauté</span> d'entrepreneurs IA<br><span class="hl">en France.</span>
+        On construit <span class="hl">la plus grande</span><br><span class="hl">communauté</span> d'entrepreneurs IA<br><span class="hl">en France.</span>
       </h2>
       <p class="vision-sub stag" style="animation-delay:.2s">
         Pas un cours. Une communauté vivante. L'IA évolue tous les jours — on reste à la pointe avec elle. Des entrepreneurs qui implémentent vraiment, qui construisent, qui avancent. Rejoindre Ceasar.ia, c'est monter dans le train avant qu'il parte sans toi.

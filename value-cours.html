@@ -85,6 +85,22 @@
     .footer-links a { font-size: .8125rem; font-weight: 500; color: var(--ink-3); transition: color .14s; }
     .footer-links a:hover { color: var(--ink); }
     .footer-copy { font-size: .75rem; color: var(--ink-4); }
+    @media(max-width:640px) {
+      .nav-in { padding: 0 18px; }
+      .nav-cta { font-size: .8rem; padding: 8px 14px; }
+      .hero { padding: 88px 18px 48px; }
+      .hero-sub { font-size: 1rem; }
+      .section { padding: 56px 18px; }
+      .h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
+      .sub { font-size: .9375rem; }
+      .lessons-grid { grid-template-columns: 1fr; }
+      .yt-cta { flex-direction: column; align-items: flex-start; }
+      .cta-strip { padding: 40px 20px; border-radius: 16px; }
+      .cta-title { font-size: clamp(1.6rem, 7vw, 2.4rem); }
+      .cta-btn { display: block; width: 100%; text-align: center; }
+      .footer-in { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .footer-links { flex-direction: column; gap: 12px; }
+    }
   </style>
 </head>
 <body>
